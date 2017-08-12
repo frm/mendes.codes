@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700');
+
+html,
+body {
+  overflow: auto;
+
+  background: var(--color-white);
+  color: var(--color-black);
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+p {
+  font-family: var(--font-family-text);
+  font-size: var(--size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--size-large);
+}
+
+a {
+  text-decoration: none;
+}

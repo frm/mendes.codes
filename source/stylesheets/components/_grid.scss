@@ -1,0 +1,11 @@
+.Grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Grid-content {
+  width: 100%;
+  max-width: var(--grid-size);
+  padding: var(--size-xlarge);
+}

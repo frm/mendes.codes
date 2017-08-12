@@ -1,0 +1,22 @@
+.Link {
+  color: inherit;
+
+  text-decoration: none;
+
+  &::visited,
+  &::hover {
+    color: inherit;
+
+    text-decoration: none;
+  }
+}
+
+.Link.Link--black {
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-black);
+
+  &::visited,
+  &::hover {
+    color: var(--color-black);
+  }
+}

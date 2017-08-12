@@ -1,0 +1,16 @@
+.Presentation-introduction,
+.Presentation-extra,
+.Presentation-cta,
+.Presentation-links {
+  margin-bottom: var(--size-large);
+}
+
+.Presentation-realEnding {
+  color: var(--color-white);
+}
+
+.Presentation-link {
+  &:not(:last-child) {
+    margin-bottom: var(--size-tiny);
+  }
+}
