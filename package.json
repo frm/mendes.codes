@@ -1,0 +1,11 @@
+{
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "lint": "stylelint sources/stylesheets/**/*.scss"
+  },
+  "devDependencies": {
+    "stylelint": "^8.0.0",
+    "stylelint-order": "^0.6.0"
+  }
+}

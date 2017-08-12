@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+if ! hash bundle 1>/dev/null; then
+  gem install bundler
+fi
+
+(bundle check &>/dev/null) || bundle install
+
+LOCAL_NODE_VERSION=$(node -v)
+EXPECTED_NODE_VERSION=$(cat .nvmrc)
+
+if [ "$LOCAL_NODE_VERSION" != "v$EXPECTED_NODE_VERSION" ];
+then
+  echo "[ERR]: Node version is different from the target version." >&2
+  echo "Try running \`nvm use\`" >&2
+  exit 1
+fi
+
+yarn install
