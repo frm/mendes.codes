@@ -1,0 +1,32 @@
+.Nav {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: var(--nav-height);
+}
+
+.Nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--grid-size);
+}
+
+.Nav-link {
+  &:not(:last-child) {
+    margin-right: 6px;
+
+    &::after {
+      content: '/';
+
+      margin-left: 6px;
+    }
+  }
+}
