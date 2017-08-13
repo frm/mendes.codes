@@ -1,0 +1,32 @@
+.Speaking {
+  padding-top: var(--nav-height);
+}
+
+.Speaking-text {
+  margin-bottom: var(--size-huge);
+}
+
+.Speaking-videos {
+  display: flex;
+  flex-direcion: row;
+
+  flex-wrap: wrap;
+}
+
+.Speaking-video {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 50%;
+}
+
+.Speaking-videoDate {
+  color: var(--color-grey);
+
+  font-size: var(--size-small);
+  line-height: var(--size-base);
+}
+
+.Speaking-videoTitle {
+  font-weight: var(--font-weight-bold);
+}
