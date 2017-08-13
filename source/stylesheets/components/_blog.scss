@@ -13,9 +13,9 @@
 .Blog-post {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-start;
-  flex-wrap: wrap;
 
   &:not(:last-child) {
     margin-bottom: var(--size-large);
