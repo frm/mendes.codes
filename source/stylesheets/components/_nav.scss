@@ -8,6 +8,11 @@
 
   width: 100%;
   height: var(--nav-height);
+
+  @include phone {
+    font-size: var(--size-small);
+    line-height: var(--size-base);
+  }
 }
 
 .Nav-links {
