@@ -15,8 +15,13 @@
   border-bottom: 2px solid var(--color-black);
   color: var(--color-black);
 
-  &::visited,
-  &::hover {
+  &::visited {
     color: var(--color-black);
+  }
+
+  &:hover {
+    background-color: var(--color-black);
+    border-bottom: none;
+    color: var(--color-white);
   }
 }
