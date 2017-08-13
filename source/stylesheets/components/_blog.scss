@@ -23,12 +23,11 @@
 }
 
 .Blog-postTitle {
-  font-size: var(--size-large);
   font-weight: var(--font-weight-bold);
-  line-height: var(--size-xlarge);
 }
 
 .Blog-postDate {
+  align-self: center;
   margin-right: 6px;
 
   color: var(--color-grey);
