@@ -6,7 +6,7 @@
 .About-header,
 .About-photo,
 .About-text {
-  margin-bottom: calc(2 * var(--size-xlarge));
+  margin-bottom: var(--size-xlarge);
 }
 
 .About-photo {

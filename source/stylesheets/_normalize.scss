@@ -23,6 +23,11 @@ p {
   font-size: var(--size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--size-large);
+
+  @include phone {
+    font-size: var(--size-small);
+    line-height: var(--size-base);
+  }
 }
 
 a {
