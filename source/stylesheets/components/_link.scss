@@ -15,6 +15,8 @@
   border-bottom: 2px solid var(--color-black);
   color: var(--color-black);
 
+  transition: all 0.1s ease-in;
+
   &::visited {
     color: var(--color-black);
   }
