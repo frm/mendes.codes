@@ -1,5 +1,8 @@
+$About-max-width: 700px;
+$About-photo-length: 200px;
+
 .About {
-  max-width: 700px;
+  max-width: $About-max-width;
   padding-top: var(--nav-height);
 }
 
@@ -13,15 +16,23 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
 .About-photoImg {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: $About-photo-length;
+  max-height: $About-photo-length;
   margin-right: var(--size-small);
-  margin-bottom: var(--size-small);
+}
+
+.About-photoText {
+  min-width: $About-photo-length;
+  height: $About-photo-length;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .About-endingList {
