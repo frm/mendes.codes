@@ -10,6 +10,13 @@
   margin-top: var(--size-large);
 }
 
+.Blog-warning {
+  padding: var(--size-xsmall);
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
 .Blog-post {
   display: flex;
   flex-direction: row;

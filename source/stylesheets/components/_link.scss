@@ -27,3 +27,24 @@
     color: var(--color-white);
   }
 }
+
+.Link.Link--white {
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-white);
+
+  transition: all 0.1s ease-in;
+
+  &::visited {
+    color: var(--color-white);
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+    border-bottom: none;
+    color: var(--color-black);
+  }
+}
+
+.Link.Link--noBorder {
+  border-bottom: none;
+}

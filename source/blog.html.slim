@@ -3,25 +3,11 @@ title: apparently, mendes writes | @fribmendes
 ---
 
 .Blog
-  .Blog-header
-    ' Note: this is the old blog archive. At any point it can be deleted.
-    ' Follow my new blog
-    a.Link.Link--black href="#{data.links.blog}" here
-    br
-    br
-    ' I occasionally enjoy writing about tech, life and tech life.
-    br
-    ' Most recently I have been writing in the
-    a.Link.Link--black href="https://subvisual.co/blog" target="_blank"
-     | Subvisual blog
-    ' .
+  span.Blog-warning
+    ' this is my old blog archive. It *will* be deleted. You can follow my new blog
+    a.Link.Link--white.Link--noBorder href="#{data.links.blog}" here
 
   .Blog-posts
-    .Blog-indexTitle
-      ' I have been migrating my posts from everywhere else to here.
-      br
-      ' In the meantime, here are some blog posts my mom thinks are pretty rad.
-
     ul.Blog-index
       li.Blog-post
         span.Blog-postDate Apr 24th, 2017
