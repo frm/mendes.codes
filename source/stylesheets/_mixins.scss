@@ -1,7 +1,15 @@
+$max-width-tablet: 725px;
 $max-width-phone: 425px;
 
 @mixin phone {
   @media screen and (max-width: #{$max-width-phone}) {
+    @content;
+  }
+}
+
+
+@mixin tablet {
+  @media screen and (max-width: #{$max-width-tablet}) {
     @content;
   }
 }
