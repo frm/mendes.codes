@@ -1,0 +1,51 @@
+maintainer:
+  - name: geometry-zsh/geometry
+    description: a minimal and customizable zsh theme
+    link: https://github.com/geometry-zsh/geometry
+
+  - name: mustacheme
+    description: MaaS - Mustaches as a Service
+    link: https://github.com/fribmendes/mustacheme
+
+  - name: listen_to_this
+    description: /r/listentothis on your console.
+    link: https://github.com/fribmendes/listen_to_this
+
+  - name: table_flipper
+    description: (╯°□°）╯︵ ┻━┻ on Elixir errors.
+    link: https://github.com/fribmendes/table_flipper
+
+  - name: macos-font-smoothing
+    description: the most useless extension for Chrome font-smoothing.
+    link: https://github.com/fribmendes/macos-font-smoothing
+
+  - name: daemobot (unmaintained)
+    description: A mumble bot for Tagpro.
+    link: https://github.com/fribmendes/daemobot
+
+  - name: rails-template-cache (unmaintained)
+    description: adding Rails templates to Angular's template cache.
+    link: https://github.com/fribmendes/rails-template-cache
+
+contributor:
+  - name: phoenixframework/firenest
+    description: building distributed systems.
+    link: https://github.com/phoenixframework/firenest
+  - name: asonge/loom
+    description: CRDTs in Elixir.
+    link: https://github.com/asonge/loom
+  - name: w0rp/ale
+    description: Asynchronous linting for vim.
+    link: https://github.com/w0rp/ale
+  - name: cafebazaar/ecto-cassandra
+    description: Ecto Cassandra adapter.
+    link: https://github.com/cafebazaar/ecto-cassandra
+  - name: visionmedia/superagent
+    description: Ajax with less suck.
+    link: https://github.com/visionmedia/superagent
+  - name: sparksuite/simplemde-markdown-editor
+    description: embeddable JavaScript Markdown editor.
+    link: https://github.com/sparksuite/simplemde-markdown-editor
+  - name: Goles/Battery
+    description: display your laptop's battery status on the terminal.
+    link: https://github.com/Goles/Battery
