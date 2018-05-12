@@ -8,25 +8,49 @@
 
 .Speaking-videos {
   display: flex;
-  flex-direcion: row;
+  flex-direction: row;
 
   flex-wrap: wrap;
 }
 
 .Speaking-video {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
-  min-width: 50%;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: var(--size-large);
+  }
 }
 
-.Speaking-videoDate {
-  color: var(--color-grey);
+.Speaking-videoDetails {
+  display: flex;
+  flex-direction: column;
 
-  font-size: var(--size-small);
+  width: 66%;
+
+  margin-right: 0;
+  margin-left: var(--size-small);
+}
+
+.Speaking-videoLocation {
+  margin-top: var(--size-small);
+
+  // NOTE: this breaks the scale but I can't really figure out any other thing to do
+  font-size: 14px;
   line-height: var(--size-base);
 }
 
 .Speaking-videoTitle {
   font-weight: var(--font-weight-bold);
+}
+
+.Speaking-links {
+  margin-top: var(--size-large);
+}
+
+.Speaking-description {
+  font-size: var(--size-small);
+  line-height: var(--size-base);
 }

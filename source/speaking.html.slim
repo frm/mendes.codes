@@ -6,9 +6,11 @@ title: apparently, mendes talks | @fribmendes
   .Speaking-text
     ' I have been known to be a speaker on multiple events,
     br
-    ' from local workshops, meetups, university events,
+    ' including but not limited to workshops, meetups,
     br
-    ' to conferences.
+    ' conferences, BBQs, sprees, soirees, parties, brunches,
+    br
+    ' lunches (not dinners), festivities, shindings and get-togethers.
     br
     br
     ' If you want me to speak at your event, feel free
@@ -21,12 +23,15 @@ title: apparently, mendes talks | @fribmendes
     ' .
 
   .Speaking-videos
-    .Speaking-video
-      .Speaking-videoInfo
-        span.Speaking-videoDate Oct 2016
-        h2.Speaking-videoTitle
-          ' Pixels Camp - A Look Into Bloom Filters
+    - data.talks.each do |talk|
+      .Speaking-video
+        .Video
+          .Video-content
+            iframe.Video-video src="https://www.youtube.com/embed/#{talk.youtube_id}?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen=""
 
-      .Video
-        .Video-content
-          iframe.Video-video src="https://www.youtube.com/embed/i05DjYt5ovk?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen=""
+        .Speaking-videoDetails
+          h2.Speaking-videoTitle #{talk.title}
+          p.Speaking-description #{talk.description}
+          span.Speaking-links
+            a.Link.Link--black href="#{talk.slides}"
+              ' Slides
