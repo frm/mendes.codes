@@ -29,7 +29,7 @@ maintainer:
 
 contributor:
   - name: phoenixframework/firenest
-    description: building distributed systems.
+    description: a framework for building distributed systems.
     link: https://github.com/phoenixframework/firenest
   - name: asonge/loom
     description: CRDTs in Elixir.

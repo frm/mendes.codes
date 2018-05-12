@@ -33,6 +33,10 @@ $About-photo-length: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include phone {
+    margin-top: var(--size-base);
+  }
 }
 
 .About-endingList {

@@ -4,7 +4,7 @@ title: apparently, mendes | @fribmendes
 
 .About
   .About-photo
-    img.About-photoImg src="/images/mendes-square.jpg"
+    img.About-photoImg src="/images/mendes-conf.jpg"
     .About-photoText
       div
         ' *record scratch. freeze frame*
@@ -16,17 +16,6 @@ title: apparently, mendes | @fribmendes
         ' Yeah, me neither.
 
   .About-text
-    ' Feel free to follow me on
-    a.Link.Link--black target="_blank" href="#{data.links.twitter}" Twitter
-    ' ,
-    a.Link.Link--black target="_blank" href="#{data.links.github}" GitHub
-    ' ,
-    a.Link.Link--black target="_blank" href="#{data.links.linkedin}" LinkedIn
-    '
-    ' or
-    a.Link.Link--black target="_blank" href="#{data.links.instagram}" Instagram
-    ' .
-
     br
     br
     ' I have a MSc in Distributed Systems and Cryptography
@@ -36,14 +25,16 @@ title: apparently, mendes | @fribmendes
     br
 
     ' I am one of the founders of
-    a.Link.Link--black target="_blank" href="#{data.links.include}"
-      | #include &lt;braga&gt;
+    span.HighlightedText
+      a.Link.Link--white.Link--noBorder target="_blank" href="#{data.links.include}"
+        | #include &lt;braga&gt;
     ', a volunteering movement that makes use of the superpowers developers
     ' have to make a direct positive impact in the local community.
     ' We help charities, non-profits and individuals in need through tech.
     ' For 3 years, I was also the champion of
-    a.Link.Link--black target="_blank" href="#{data.links.coderdojo}"
-      | CoderDojo Braga.
+    span.HighlightedText
+      a.Link.Link--white.Link--noBorder target="_blank" href="#{data.links.coderdojo}"
+        | CoderDojo Braga
 
     br
     br
@@ -66,7 +57,7 @@ title: apparently, mendes | @fribmendes
 
     br
 
-    ' and having the odd contribution to:
+    ' At times I have made the odd contribution to:
 
     br
     br
@@ -82,9 +73,10 @@ title: apparently, mendes | @fribmendes
     br
     br
 
-    '  I am also a regular speaker in conferences, meetups and other university events. You can see
-    a.Link.Link--black target="_blank" href="/speaking"
-      | my talks
+    '  I am also a regular speaker in conferences, meetups and other events. You can see my
+    span.HighlightedText
+      a.Link.Link--white.Link--noBorder target="_blank" href="/speaking"
+        | talks
     '  and contact me if you are looking for a speaker.
 
     br
@@ -95,7 +87,7 @@ title: apparently, mendes | @fribmendes
     ' and being a role model for my peers and the
     a.Link.Link--black target="_blank" href="#{data.links.quiz}"
       | 2016 Pixels Camp Quiz Show
-    '  which I'm the most proud of.
+    '  which doesn't mean a lot tbh but it's what I'm the most proud of.
 
     br
     br
@@ -106,19 +98,24 @@ title: apparently, mendes | @fribmendes
     a.Link.Link--black target="_blank" href="https://utrust.com" payments in cryptocurrencies
     '  easy and accessible to everyone.
 
+    br
+    br
+
+    ' Feel free to follow me on
+    a.Link.Link--black target="_blank" href="#{data.links.twitter}" Twitter
+    ' ,
+    a.Link.Link--black target="_blank" href="#{data.links.github}" GitHub
+    ' ,
+    a.Link.Link--black target="_blank" href="#{data.links.linkedin}" LinkedIn
+    ' ,
+    a.Link.Link--black target="_blank" href="#{data.links.instagram}" Instagram
+    '  or shoot me
+    a.Link.Link--black target="_blank" href="#{data.meta.email}"
+      ' an email
 
     br
     br
 
-    ' Feel free to
-    a.Link.Link--black target="_blank" href="mailto:#{data.meta.mail}"
-      | email me
-    '  or hit me up on
-    a.Link.Link--black target="_blank" href="mailto:#{data.links.twitter}"
-      | Twitter
-    '  and chat about whatever you want to.
-    br
-    br
     ' I'm particularly good at small talk in the following topics:
     br
     br
