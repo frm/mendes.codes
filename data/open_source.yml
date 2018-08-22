@@ -7,13 +7,13 @@ maintainer:
     description: MaaS - Mustaches as a Service
     link: https://github.com/fribmendes/mustacheme
 
-  - name: listen_to_this
-    description: /r/listentothis on your console.
-    link: https://github.com/fribmendes/listen_to_this
-
   - name: table_flipper
     description: (╯°□°）╯︵ ┻━┻ on Elixir errors.
     link: https://github.com/fribmendes/table_flipper
+
+  - name: listen_to_this
+    description: /r/listentothis on your console.
+    link: https://github.com/fribmendes/listen_to_this
 
   - name: macos-font-smoothing
     description: the most useless extension for Chrome font-smoothing.
