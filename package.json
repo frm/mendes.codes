@@ -6,6 +6,6 @@
   },
   "devDependencies": {
     "stylelint": "^8.0.0",
-    "stylelint-order": "^0.6.0"
+    "stylelint-order": "^0.8.1"
   }
 }
