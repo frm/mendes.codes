@@ -5,7 +5,7 @@
     "lint": "stylelint source/stylesheets/**/*.scss"
   },
   "devDependencies": {
-    "stylelint": "^8.0.0",
+    "stylelint": "^9.10.1",
     "stylelint-order": "^0.8.1"
   }
 }
