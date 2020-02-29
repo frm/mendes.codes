@@ -1,8 +1,16 @@
 .Presentation-introduction,
-.Presentation-extra,
+.Presentation-text,
 .Presentation-cta,
 .Presentation-links {
   margin-bottom: var(--size-large);
+}
+
+.Presentation-title {
+  padding-top: var(--size-large);
+  margin-bottom: var(--size-large);
+
+  font-size: var(--size-large);
+  font-weight: var(--font-weight-bold);
 }
 
 .Presentation-realEnding {
