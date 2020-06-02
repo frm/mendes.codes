@@ -51,6 +51,8 @@ body {
   font-family: var(--font-family-sans-serif);
   background-color: var(--primary-color);
   color: var(--secondary-color);
+
+  overflow-y: scroll;
 }
 
 #___gatsby {
