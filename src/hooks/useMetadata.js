@@ -15,10 +15,17 @@ export default function useMetadata() {
               subvisual
               thoughtbot
               utrust
+              include
+              coderdojo
+              rubyconfpt
+              mirrorconf
+              bragajs
+              bragabeam
             }
             socials {
               twitter
               github
+              email
             }
             talks {
               title

@@ -41,7 +41,7 @@ export default () => {
       <Empty size="54" />
 
       {talks.map((talk, idx) => (
-        <span>
+        <span key={idx}>
           <Talk {...talk} />
           {idx === talks.length - 1 ? "" : <hr className="Talks-separator" />}
         </span>

@@ -20,7 +20,6 @@ html {
   --size-54: 54px;
   --col-size: 60px;
   --gap-size: 48px;
-  --col-and-gap-size: 108px;
 }
 
 body.light {
@@ -29,6 +28,11 @@ body.light {
   --tertiary-color: var(--color-rifle-green);
   --primary-highlight-color: var(--color-deep-champagne);
   --secondary-highlight-color: var(--color-opal);
+
+  ::selection {
+    color: var(--color-smoky-black);
+    background-color: var(--color-opal);
+  }
 }
 
 body.dark {
@@ -37,6 +41,11 @@ body.dark {
   --tertiary-color: var(--color-platinum);
   --primary-highlight-color: var(--color-beaver);
   --secondary-highlight-color: var(--color-cyber-grape);
+
+  ::selection {
+    color: var(--color-white);
+    background-color: var(--color-beaver);
+  }
 }
 
 body {
@@ -65,6 +74,10 @@ body {
 
 strong {
   font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 a {

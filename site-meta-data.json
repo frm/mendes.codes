@@ -4,12 +4,19 @@
   "description": "Mendes is a developer and apparently he also codes",
   "socials": {
     "twitter": "https://twitter.com/justmnds",
-    "github": "https://github.com/frm"
+    "github": "https://github.com/frm",
+    "email": "fernando@mendes.codes"
   },
   "links": {
     "subvisual": "https://subvisual.com",
     "thoughtbot": "https://thoughtbot.com",
-    "utrust": "https://utrust.com"
+    "utrust": "https://utrust.com",
+    "include": "https://github.com/includebraga",
+    "coderdojo": "https://github.com/coderdojobraga",
+    "rubyconfpt": "https://rubyconf.pt",
+    "mirrorconf": "https://mirrorconf.com",
+    "bragabeam": "https://twitter.com/BragaBEAM",
+    "bragajs": "https://twitter.com/braga__js"
   },
   "talks": [
     {
