@@ -15,7 +15,6 @@ export default () => (
         <div className="Nav-right">
           <ExternalNavLink to="https://blog.mendes.codes">Blog</ExternalNavLink>
           <NavLink to="/talks">Talks</NavLink>
-          <NavLink to="/open-source">Open Source</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </div>

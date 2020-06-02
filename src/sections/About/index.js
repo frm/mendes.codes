@@ -3,6 +3,8 @@ import React from "react";
 import Empty from "../../components/Empty";
 import Highlight from "../../components/Highlight";
 import TextBox from "../../components/TextBox";
+import GitHubLogo from "../../components/GitHubLogo";
+import TwitterLogo from "../../components/TwitterLogo";
 import { ExternalLink, Link } from "../../components/Link";
 
 import useMetadata from "../../hooks/useMetadata";
@@ -11,7 +13,7 @@ import "./style.scss";
 
 export default () => {
   const {
-    socials: { email },
+    socials: { twitter: twitterUrl, github: githubUrl, email },
     links: {
       subvisual: subvisualUrl,
       thoughtbot: thoughtbotUrl,
@@ -38,7 +40,24 @@ export default () => {
         <p>
           I'm a software engineer at{" "}
           <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink> where I build
-          awesome web apps using <strong>Elixir</strong>.
+          awesome web apps using <strong>Elixir</strong>. I'm currently living
+          in sunny ole Portugal, specifically in Braga.
+        </p>
+
+        <Empty size="24" />
+
+        <p>
+          You can find me on{" "}
+          <ExternalLink to={twitterUrl}>
+            {" "}
+            <TwitterLogo /> justmnds{" "}
+          </ExternalLink>{" "}
+          and{" "}
+          <ExternalLink to={githubUrl}>
+            {" "}
+            <GitHubLogo /> frm{" "}
+          </ExternalLink>
+          .
         </p>
 
         <Empty size="24" />
