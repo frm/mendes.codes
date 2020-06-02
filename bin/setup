@@ -1,19 +1,55 @@
 #!/usr/bin/env sh
 
-if ! hash bundle 1>/dev/null; then
-  gem install bundler
+set -e
+source "./bin/functions"
+
+# pp_info "setup" "Setting up the env..."
+# if [ ! -f .envrc ]; then
+#   cp .envrc.sample .envrc
+#   printf "env file created, you might want to open .envrc and set the correct values. We recommend using direnv to manage it.\n\n"
+# else
+#   printf "envrc file already exists, skipping...\n\n"
+# fi
+
+#
+# languages setup
+#
+
+pp_info "setup" "Installing required languages..."
+
+if not_installed "asdf"; then
+  pp_error "setup" "
+    We are using asdf (https://github.com/asdf-vm/asdf) to manage tool
+    dependencies, since it was not found on your system we cannot ensure that you
+    are using the correct versions of all the tools. Please install it and run
+    this script again, or proceed at your own peril.
+  "
+
+  ensure_confirmation
+else
+  set +e
+  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git 2>/dev/null
+  set -e
+
+  printf "Importing nodejs release team keyring... "
+  bin/helpers/import-nodejs-keys
+  echo "Done!"
+
+  asdf install
 fi
 
-(bundle check &>/dev/null) || bundle install
+#
+# dependencies
+#
 
-LOCAL_NODE_VERSION=$(node -v)
-EXPECTED_NODE_VERSION=$(cat .nvmrc)
-
-if [ "$LOCAL_NODE_VERSION" != "v$EXPECTED_NODE_VERSION" ];
-then
-  echo "[ERR]: Node version is different from the target version." >&2
-  echo "Try running \`nvm use\`" >&2
-  exit 1
+pp_info "setup" "Ensuring gatsby is installed..."
+if not_installed "gatsby"; then
+  npm install -g gatsby-cli
+else
+  echo "Already installed, skipping."
 fi
 
-yarn install
+pp_info "setup" "Installing dependencies..."
+npm install
+
+pp_success "setup" "You're good to go! Run bin/server to get the development server running."

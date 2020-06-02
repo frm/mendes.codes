@@ -1,0 +1,20 @@
+.Link {
+  padding: 2px 4px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  background: linear-gradient(to top, var(--secondary-highlight-color) 50%, transparent 50%);
+  color: var(--secondary-color);
+
+  transition: all 0.1s ease-in;
+
+  &::visited {
+    color: var(--secondary-color);
+  }
+
+  &:hover {
+    background: linear-gradient(to top, var(--secondary-highlight-color) 50%, transparent 50%);
+    color: var(--tertiary-color);
+  }
+}

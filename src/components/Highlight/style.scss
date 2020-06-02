@@ -1,0 +1,10 @@
+.Highlight{
+  padding: 2px 4px;
+
+  background: linear-gradient(to top, var(--primary-highlight-color) 50%, transparent 50%);
+  color: var(--secondary-color);
+
+  &.Highlight--strong {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,15 @@
+.Grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Grid-content {
+  width: 100%;
+  max-width: var(--grid-size);
+  padding: var(--size-24);
+
+  @media(min-width: 425px) {
+    padding: var(--size-36);
+  }
+}
