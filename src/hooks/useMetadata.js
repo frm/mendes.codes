@@ -1,10 +1,8 @@
-import { useStaticQuery, graphql} from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function useMetadata() {
   const {
-    site: {
-      siteMetadata: metadata
-    }
+    site: { siteMetadata: metadata },
   } = useStaticQuery(
     graphql`
       query {
@@ -22,11 +20,22 @@ export default function useMetadata() {
               twitter
               github
             }
+            talks {
+              title
+              event
+              description
+              videoId
+              slidesUrl
+              variation {
+                title
+                url
+              }
+            }
           }
         }
       }
     `
-  )
+  );
 
-  return metadata
+  return metadata;
 }

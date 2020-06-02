@@ -1,17 +1,16 @@
-import React from "react"
-import ThemeChanger from "../ThemeChanger"
-import { ExternalNavLink, NavLink } from "../NavLink"
-import Grid from "../Grid"
-import Title from "../Title"
+import React from "react";
+import { ExternalNavLink, NavLink } from "../NavLink";
+import Grid from "../Grid";
+import Title from "../Title";
 
-import "./style.scss"
+import "./style.scss";
 
-export default (props) => (
+export default () => (
   <nav className="Nav">
     <Grid>
       <div className="Nav-container">
         <div className="Nav-left">
-          <Title>mendes.codes</Title>
+          <Title />
         </div>
         <div className="Nav-right">
           <ExternalNavLink to="https://blog.mendes.codes">Blog</ExternalNavLink>
@@ -23,4 +22,4 @@ export default (props) => (
       </div>
     </Grid>
   </nav>
-)
+);

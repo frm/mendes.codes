@@ -10,5 +10,36 @@
     "subvisual": "https://subvisual.com",
     "thoughtbot": "https://thoughtbot.com",
     "utrust": "https://utrust.com"
-  }
+  },
+  "talks": [
+    {
+      "title": "you. and the morals of technology",
+      "event": "Balkan Ruby 2019",
+      "description": "What is the definition of morally good and bad? We cannot clearly define it. In this talk I go through different real world scenarios of morality in tech, such as social network feeds, the rise of nationwide technology, datafication of children, bioengineering and the end of science. I then apply them to common scenarios such as with clients or coworkers and the psychology behind them. Finally, I showcase my own take and show how a small application of our \"super-power\" can have a lasting impact in the real world. I have been working with a group of volunteers in Braga, Portugal to apply technology improve our community. We helped volunteer firefighters decrease their emergency response times and over 300 institutionalised children (orphans, children removed from their parents due to abuse or lack of conditions) by creating a city-wide Secret Santa event. With this talk I aim to bring forth the discussion of the morality of our work, how it impacts our world and how we can tackle the weight of the responsibility.",
+      "videoId": "joZVgTY9kCU",
+      "slidesUrl": "https://speakerdeck.com/fribmendes/you-and-the-morals-of-technology",
+      "variation": {
+        "title": "Pixels Camp 2019",
+        "url": "https://www.youtube.com/watch?v=qP9Kb07Epac"
+      }
+    },
+    {
+      "title": "Knee-Deep Into P2P",
+      "event": "Elixir Conf EU 2018",
+      "description": "What happens when you don't like centralized things? You do P2P! I created a distributed smart office using Elixir that runs in a single P2P network. I will use the office as an example and teach you how different the reasoning between a web-like centralised context and a P2P distributed system is. We will go from simple P2P topologies (gossip, trees) to more complex ones (Gnutella2, HyParView, Plumtrees) and take a look at what CRDTs are and how awesome they can be for shared data.",
+      "videoId": "Y545Tp6iM28",
+      "slidesUrl": "https://google.com",
+      "variation": {
+        "title": "Lambda Days 2018",
+        "url": "https://speakerdeck.com/fribmendes/knee-deep-into-p2p-a-tale-of-fail-elixirconf-eu-2018-version"
+      }
+    },
+    {
+      "title": "A Look Into Bloom Filters",
+      "event": "Pixels Camp 2016",
+      "description": "Ever wondered how companies that handle large amounts of data deal with inclusion tests? How Medium and Quora know what you have read without even querying the database? How Facebook does type-ahead queries? Or how databases optimize disk lookup? It's nothing new. Actually, it's a very, very old trick - almost 50 years old. And it's called Bloom Filter.",
+      "videoId": "i05DjYt5ovk",
+      "slidesUrl": "https://speakerdeck.com/fribmendes/a-look-into-bloom-filters"
+    }
+  ]
 }

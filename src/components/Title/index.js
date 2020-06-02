@@ -1,8 +1,24 @@
-import React from "react"
-import Highlight from "../Highlight"
+import React from "react";
+import { Link } from "gatsby";
 
-import "./style.scss"
+import Highlight from "../Highlight";
 
-export default ({ children }) => (
-  <h1 className="Title"><Highlight>{children}</Highlight></h1>
-)
+import "./style.scss";
+
+export default () => {
+  const verb =
+    {
+      "/": "codes",
+      "/about": "is",
+      "/open-source": "codes",
+      "/talks": "talks",
+    }[window.location.pathname] || "codes";
+
+  return (
+    <Link to="/">
+      <h1 className="Title">
+        <Highlight>{`mendes ${verb}`}</Highlight>
+      </h1>
+    </Link>
+  );
+};

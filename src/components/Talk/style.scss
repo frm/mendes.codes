@@ -1,0 +1,58 @@
+.Talk {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  .Talk-header {
+    text-align: right;
+  }
+
+  .Talk-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Talk-video {
+    max-width: calc(6 * var(--col-size) + 5 * var(--gap-size));
+    margin-right: var(--gap-size);
+  }
+
+  .Talk-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Talk-title {
+    font-family: var(--font-family-serif);
+    font-size: var(--size-24);
+    line-height: var(--size-36);
+  }
+
+  .Talk-description {
+    // we going off grid boiiiis
+    color: var(--secondary-color);
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .Talk-event {
+    color: var(--tertiary-color);
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--size-11);
+    line-height: var(--size-16);
+  }
+
+  .Talk-variation {
+    color: var(--tertiary-color);
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--size-11);
+    line-height: var(--size-16);
+  }
+}

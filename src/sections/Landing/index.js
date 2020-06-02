@@ -8,8 +8,6 @@ import TwitterLogo from "../../components/TwitterLogo"
 
 import useMetadata from "../../hooks/useMetadata"
 
-import "./style.scss"
-
 export default () => {
   const {
     links: {
