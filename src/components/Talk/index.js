@@ -41,7 +41,11 @@ export default ({
       <Spacing size="16" />
 
       <div className="Talk-content">
-        <YouTube className="Talk-video" videoId={videoId} opts={opts} />
+        <YouTube
+          containerClassName={"Talk-video"}
+          videoId={videoId}
+          opts={opts}
+        />
 
         <div className="Talk-info">
           <p className="Talk-description">{description}</p>

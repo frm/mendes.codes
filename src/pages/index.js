@@ -1,9 +1,15 @@
-import React from "react"
-// import { graphql } from 'gatsby'
-import Layout from "../components/Layout"
-import Meta from "../components/Meta"
+import React from "react";
+import Layout from "../components/Layout";
+import Meta from "../components/Meta";
 
-import Landing from "../sections/Landing"
+import Landing from "../sections/Landing";
+
+export default () => (
+  <Layout>
+    <Meta />
+    <Landing />
+  </Layout>
+);
 
 // const IndexPage = ({
 //   data: {
@@ -11,9 +17,9 @@ import Landing from "../sections/Landing"
 //   },
 // }) => {
 
-  // const Posts = edges
-  //   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-  //   .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+// const Posts = edges
+//   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+//   .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 //
 // export default IndexPage
 // export const pageQuery = graphql`
@@ -34,10 +40,3 @@ import Landing from "../sections/Landing"
 //     }
 //   }
 // `
-
-export default () => (
-  <Layout>
-    <Meta/>
-    <Landing/>
-  </Layout>
-)

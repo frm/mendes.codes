@@ -43,12 +43,10 @@ export default () => {
       {talks.map((talk, idx) => (
         <span key={idx}>
           <Talk {...talk} />
-          {idx === talks.length - 1 ? "" : <hr className="Talks-separator" />}
+          <hr className="Talks-separator" />
         </span>
       ))}
 
-      <Spacing size="54" />
-      <Spacing size="54" />
       <Spacing size="54" />
 
       <div className="Talks-cta">
