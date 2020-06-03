@@ -26,6 +26,85 @@ collections:
             label: Description
             default: ''
             required: false
+          - widget: object
+            name: socials
+            label: Socials
+            fields:
+              - widget: text
+                name: twitter
+                description: Twitter URL
+                required: true
+              - widget: text
+                name: github
+                description: GitHub URL
+                required: true
+              - widget: text
+                name: email
+                description: Email
+                required: true
+          - widget: object
+            name: links
+            label: Links
+            fields:
+              - widget: text
+                name: subvisual
+                description: Subvisual URL
+                required: true
+              - widget: text
+                name: thoughtbot
+                description: thoughtbot URL
+                required: true
+              - widget: text
+                name: utrust
+                description: Utrust URL
+                required: true
+              - widget: text
+                name: include
+                description: "#include <braga> URL"
+                required: true
+              - widget: text
+                name: coderdojo
+                description: CoderDojo URL
+                required: true
+              - widget: text
+                name: rubyconfpt
+                description: RubyConfPT URL
+                required: true
+              - widget: text
+                name: mirrorconf
+                description: MirrorConf URL
+                required: true
+              - widget: text
+                name: bragajs
+                description: Braga.js URL
+                required: true
+              - widget: text
+                name: bragabeam
+                description: Braga.BEAM URL
+                required: true
+          - widget: list
+            name: talks
+            label: Talks
+            allow_add: true
+            fields:
+              - {name: title, label: Title, widget: string, required: true}
+              - {name: event, label: Event, widget: string, required: true}
+              - {name: description, label: Description, widget: text, required: true}
+              - {name: videoId, label: "Video ID", widget: string, required: true}
+              - {name: slidesUrl, label: "Slides URL", widget: string, required: true}
+              - name: variation
+                label: Variation
+                widget: object
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                    required: true
+                  - name: url
+                    label: URL
+                    widget: string
+                    required: true
+
   # - name: blog
   #   label: Blog
   #   folder: _data/blog
