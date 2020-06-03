@@ -3,10 +3,15 @@ import React from "react";
 import Spacing from "../../components/Spacing";
 import Highlight from "../../components/Highlight";
 import { ExternalLink, Link } from "../../components/Link";
+import TextBox from "../../components/TextBox";
 import GitHubLogo from "../../components/GitHubLogo";
 import TwitterLogo from "../../components/TwitterLogo";
 
 import useMetadata from "../../hooks/useMetadata";
+
+import landingImg from "./img.png";
+
+import "./style.scss";
 
 export default () => {
   const {
@@ -20,46 +25,57 @@ export default () => {
 
   return (
     <div className="Landing">
-      <p>
-        I'm <Highlight type="strong">mendes</Highlight> and I codes.
-      </p>
+      <div className="Landing-tagline">
+        <p>
+          I'm <Highlight type="strong">mendes</Highlight> and I codes.
+        </p>
+      </div>
 
-      <Spacing size="54" />
-      <Spacing size="54" />
+      <div className="Landing-content">
+        <TextBox>
+          <Spacing size="54" />
 
-      <p>
-        I'm a software engineer at{" "}
-        <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>. Formerly at{" "}
-        <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and{" "}
-        <ExternalLink to={utrustUrl}>Utrust</ExternalLink>.
-      </p>
+          <p>
+            I'm a software engineer at{" "}
+            <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>. Formerly
+            at <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and{" "}
+            <ExternalLink to={utrustUrl}>Utrust</ExternalLink>.
+          </p>
 
-      <p>
-        I do a lot of public speaking, blogging, volunteering, teaching and open
-        sourcing.
-      </p>
+          <p>
+            I do a lot of public speaking, blogging, volunteering, teaching and
+            open sourcing.
+          </p>
 
-      <Spacing size="54" />
+          <Spacing size="54" />
 
-      <p>
-        Follow me at{" "}
-        <ExternalLink to={twitterUrl}>
-          <TwitterLogo />
-          justmnds
-        </ExternalLink>{" "}
-        and{" "}
-        <ExternalLink to={githubUrl}>
-          <GitHubLogo /> frm
-        </ExternalLink>
-      </p>
+          <p>
+            Follow me at{" "}
+            <ExternalLink to={twitterUrl}>
+              <TwitterLogo />
+              justmnds
+            </ExternalLink>{" "}
+            and{" "}
+            <ExternalLink to={githubUrl}>
+              <GitHubLogo /> frm
+            </ExternalLink>
+          </p>
 
-      <Spacing size="54" />
-      <Spacing size="54" />
+          <Spacing size="54" />
 
-      <p>
-        Looking for a speaker for your event?{" "}
-        <Link to="/contact">Let's talk</Link>
-      </p>
+          <p>
+            Looking for a speaker for your event?{" "}
+            <Link to="/contact">Let's talk</Link>
+          </p>
+        </TextBox>
+
+        <figure className="Landing-img">
+          <img src={landingImg} />
+          <figcaption>
+            At Balkan Ruby in 2019 talking a bit about morality and the codes.
+          </figcaption>
+        </figure>
+      </div>
     </div>
   );
 };

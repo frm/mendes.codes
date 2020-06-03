@@ -1,0 +1,57 @@
+@import "../../styles/media";
+
+.Landing {
+  display: flex;
+  flex-direction: column;
+
+  .Landing-tagline {
+    margin-bottom: var(--size-54);
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  .Landing-content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  .Landing-img {
+    height: 100%;
+    margin-bottom: var(--size-36);
+
+    @include desktop {
+      margin-left: var(--col-size);
+    }
+
+    img {
+      max-width: 250px;
+
+      @include tabletAndAbove {
+        max-width: 350px;
+      }
+
+      @include desktop {
+        max-width: 400px;
+      }
+
+      @include largeDesktop {
+        max-width: 500px;
+      }
+    }
+
+    figcaption {
+      color: var(--tertiary-color);
+
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: var(--size-11);
+      line-height: var(--size-16);
+    }
+  }
+}
