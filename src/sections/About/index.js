@@ -1,6 +1,6 @@
 import React from "react";
 
-import Empty from "../../components/Empty";
+import Spacing from "../../components/Spacing";
 import Highlight from "../../components/Highlight";
 import TextBox from "../../components/TextBox";
 import GitHubLogo from "../../components/GitHubLogo";
@@ -35,7 +35,7 @@ export default () => {
           <Highlight type="strong">Mendes</Highlight>.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           I'm a software engineer at{" "}
@@ -44,7 +44,7 @@ export default () => {
           in sunny ole Portugal, specifically in Braga.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           You can find me on{" "}
@@ -60,7 +60,7 @@ export default () => {
           .
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           Before returning to Subvisual, I spent some time at{" "}
@@ -70,7 +70,7 @@ export default () => {
           blockchain payments gateway.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           I have an <strong>MSc in Distributed Systems and Cryptography</strong>{" "}
@@ -78,7 +78,7 @@ export default () => {
           excellence.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           Back in 2017, I founded{" "}
@@ -94,7 +94,7 @@ export default () => {
           .
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           I also co-lead{" "}
@@ -104,7 +104,7 @@ export default () => {
           and helping the project grow was one of my favourite endeavours.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           I'm a <Link to="/talks">regular speaker</Link> at conferences and
@@ -114,7 +114,7 @@ export default () => {
           company.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           I also think programming communities are just the best and helped
@@ -126,7 +126,7 @@ export default () => {
           help with your community event, feel free to reach out.
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           My inbox is open for you at{" "}

@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import Empty from "../Empty";
+import Spacing from "../Spacing";
 import { ExternalLink } from "../Link";
 
 import "./style.scss";
@@ -38,7 +38,7 @@ export default ({
         <h3 className="Talk-event">{event}</h3>
       </div>
 
-      <Empty size="16" />
+      <Spacing size="16" />
 
       <div className="Talk-content">
         <YouTube className="Talk-video" videoId={videoId} opts={opts} />
@@ -46,11 +46,11 @@ export default ({
         <div className="Talk-info">
           <p className="Talk-description">{description}</p>
 
-          <Empty size="16" />
+          <Spacing size="16" />
 
           {renderVariation(variation)}
 
-          <Empty size="36" />
+          <Spacing size="36" />
 
           <span className="Talk-slides">
             <ExternalLink to={slidesUrl}>Slides</ExternalLink>

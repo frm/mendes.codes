@@ -1,6 +1,6 @@
 import React from "react";
 
-import Empty from "../../components/Empty";
+import Spacing from "../../components/Spacing";
 import TextBox from "../../components/TextBox";
 import { Link } from "../../components/Link";
 import Talk from "../../components/Talk";
@@ -21,13 +21,13 @@ export default () => {
         </p>
         <p>This is the most up-to-date list of Things I Tend To Say™.</p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           I'm also <strong>available for further speaking engagements.</strong>
         </p>
 
-        <Empty size="24" />
+        <Spacing size="24" />
 
         <p>
           Interested in having me in your workshop, meetup, conference, BBQ,
@@ -36,9 +36,9 @@ export default () => {
         </p>
       </TextBox>
 
-      <Empty size="54" />
-      <Empty size="54" />
-      <Empty size="54" />
+      <Spacing size="54" />
+      <Spacing size="54" />
+      <Spacing size="54" />
 
       {talks.map((talk, idx) => (
         <span key={idx}>
@@ -47,9 +47,9 @@ export default () => {
         </span>
       ))}
 
-      <Empty size="54" />
-      <Empty size="54" />
-      <Empty size="54" />
+      <Spacing size="54" />
+      <Spacing size="54" />
+      <Spacing size="54" />
 
       <div className="Talks-cta">
         Looking for a speaker for your event?{" "}

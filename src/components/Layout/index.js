@@ -1,7 +1,7 @@
 import React from "react"
 import Grid from "../Grid"
 import Nav from "../Nav"
-import Empty from "../Empty"
+import Spacing from "../Spacing"
 import Footer from "../Footer"
 
 import "./style.scss"
@@ -14,9 +14,9 @@ export default ({ children }) => {
           <Nav />
 
           <Grid>
-            <Empty size="36"/>
-            <Empty size="36"/>
-            <Empty size="36"/>
+            <Spacing size="36"/>
+            <Spacing size="36"/>
+            <Spacing size="36"/>
 
             {children}
           </Grid>

@@ -1,0 +1,51 @@
+@import "../../styles/media";
+
+.Spacing {
+  &.Spacing--7 {
+    padding-top: calc(var(--size-7) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-7);
+    }
+  }
+
+  &.Spacing--11 {
+    padding-top: calc(var(--size-11) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-11);
+    }
+  }
+
+  &.Spacing--16 {
+    padding-top: calc(var(--size-16) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-16);
+    }
+  }
+
+  &.Spacing--24 {
+    padding-top: calc(var(--size-24) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-24);
+    }
+  }
+
+  &.Spacing--36 {
+    padding-top: calc(var(--size-36) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-36);
+    }
+  }
+
+  &.Spacing--54 {
+    padding-top: calc(var(--size-54) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-54);
+    }
+  }
+}
