@@ -13,30 +13,26 @@ export default () => (
         <div className="Nav-left">
           <MenuBar>
             <div className="Nav-menu">
+              <NavLink to="/about" modifier="alternative">
+                About
+              </NavLink>
+              <NavLink to="/talks" modifier="alternative">
+                Talks
+              </NavLink>
               <ExternalNavLink
                 modifier="alternative"
                 to="https://blog.mendes.codes"
               >
                 Blog
               </ExternalNavLink>
-              <NavLink to="/talks" modifier="alternative">
-                Talks
-              </NavLink>
-              <NavLink to="/about" modifier="alternative">
-                About
-              </NavLink>
-              <NavLink to="/contact" modifier="alternative">
-                Contact
-              </NavLink>
             </div>
           </MenuBar>
           <Title />
         </div>
         <div className="Nav-right">
-          <ExternalNavLink to="https://blog.mendes.codes">Blog</ExternalNavLink>
-          <NavLink to="/talks">Talks</NavLink>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/talks">Talks</NavLink>
+          <ExternalNavLink to="https://blog.mendes.codes">Blog</ExternalNavLink>
         </div>
       </div>
     </Grid>

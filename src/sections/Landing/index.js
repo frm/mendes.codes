@@ -2,7 +2,7 @@ import React from "react";
 
 import Spacing from "../../components/Spacing";
 import Highlight from "../../components/Highlight";
-import { ExternalLink, Link } from "../../components/Link";
+import { ExternalLink } from "../../components/Link";
 import TextBox from "../../components/TextBox";
 import GitHubLogo from "../../components/GitHubLogo";
 import TwitterLogo from "../../components/TwitterLogo";
@@ -20,7 +20,7 @@ export default () => {
       thoughtbot: thoughtbotUrl,
       utrust: utrustUrl,
     },
-    socials: { twitter: twitterUrl, github: githubUrl },
+    socials: { twitter: twitterUrl, github: githubUrl, email },
   } = useMetadata();
 
   return (
@@ -65,7 +65,7 @@ export default () => {
 
           <p>
             Looking for a speaker for your event?{" "}
-            <Link to="/contact">Let's talk</Link>
+            <ExternalLink to={`mailto:${email}`}>Let's talk</ExternalLink>
           </p>
         </TextBox>
 

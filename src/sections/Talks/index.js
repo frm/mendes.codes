@@ -2,7 +2,7 @@ import React from "react";
 
 import Spacing from "../../components/Spacing";
 import TextBox from "../../components/TextBox";
-import { Link } from "../../components/Link";
+import { ExternalLink, Link } from "../../components/Link";
 import Talk from "../../components/Talk";
 
 import useMetadata from "../../hooks/useMetadata";
@@ -12,7 +12,10 @@ import talksImg from "./img.png";
 import "./style.scss";
 
 export default () => {
-  const { talks } = useMetadata();
+  const {
+    talks,
+    socials: { email },
+  } = useMetadata();
 
   return (
     <div className="Talks">
@@ -36,7 +39,7 @@ export default () => {
           <p>
             Interested in having me in your workshop, meetup, conference, BBQ,
             spree, soirée, party, festivity, shinding or get-together?{" "}
-            <Link to="/contact">Let's talk</Link>
+            <ExternalLink to={`mailto:${email}`}>Let's talk</ExternalLink>
           </p>
         </TextBox>
 
@@ -58,7 +61,7 @@ export default () => {
 
       <div className="Talks-cta">
         Looking for a speaker for your event?{" "}
-        <Link to="/contact">Let's talk</Link>
+        <ExternalLink to={`mailto:${email}`}>Let's talk</ExternalLink>
       </div>
     </div>
   );
