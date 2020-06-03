@@ -31,6 +31,13 @@ export default () => {
 
   return (
     <div className="About">
+      <figure className="About-img">
+        <img src={aboutImg} />
+        <figcaption>
+          Florence, Italy back in the far-off year of 2019
+        </figcaption>
+      </figure>
+
       <TextBox>
         <p>
           Yep, you guessed it. I'm the one they call{" "}
@@ -137,13 +144,6 @@ export default () => {
           </ExternalLink>
         </p>
       </TextBox>
-
-      <figure className="About-img">
-        <img src={aboutImg} />
-        <figcaption>
-          Florence, Italy back in the far-off year of 2019
-        </figcaption>
-      </figure>
     </div>
   );
 };
