@@ -42,9 +42,7 @@ export default () => {
 
         <figure className="Talks-img">
           <img src={talksImg} />
-          <figcaption>
-            At Balkan Ruby in 2019 talking about morality.
-          </figcaption>
+          <figcaption>This could be me, at your event.</figcaption>
         </figure>
       </div>
 
