@@ -9,7 +9,7 @@ import TwitterLogo from "../../components/TwitterLogo";
 
 import useMetadata from "../../hooks/useMetadata";
 
-import img from "./img.png";
+import aboutImg from "./img.png";
 
 import "./style.scss";
 
@@ -139,7 +139,7 @@ export default () => {
       </TextBox>
 
       <figure className="About-img">
-        <img src={img} />
+        <img src={aboutImg} />
         <figcaption>
           Florence, Italy back in the far-off year of 2019
         </figcaption>

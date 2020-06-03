@@ -7,6 +7,8 @@ import Talk from "../../components/Talk";
 
 import useMetadata from "../../hooks/useMetadata";
 
+import talksImg from "./img.png";
+
 import "./style.scss";
 
 export default () => {
@@ -14,29 +16,38 @@ export default () => {
 
   return (
     <div className="Talks">
-      <TextBox>
-        <p>
-          I have been a speaker in multiple international conferences and the
-          occasional local meetup.
-        </p>
-        <p>This is the most up-to-date list of Things I Tend To Say™.</p>
+      <div className="Talks-header">
+        <TextBox>
+          <p>
+            I have been a speaker in multiple international conferences and the
+            occasional local meetup.
+          </p>
+          <p>This is the most up-to-date list of Things I Tend To Say™.</p>
 
-        <Spacing size="24" />
+          <Spacing size="24" />
 
-        <p>
-          I'm also <strong>available for further speaking engagements.</strong>
-        </p>
+          <p>
+            I'm also{" "}
+            <strong>available for further speaking engagements.</strong>
+          </p>
 
-        <Spacing size="24" />
+          <Spacing size="24" />
 
-        <p>
-          Interested in having me in your workshop, meetup, conference, BBQ,
-          spree, soirée, party, festivity, shinding or get-together?{" "}
-          <Link to="/contact">Let's talk</Link>
-        </p>
-      </TextBox>
+          <p>
+            Interested in having me in your workshop, meetup, conference, BBQ,
+            spree, soirée, party, festivity, shinding or get-together?{" "}
+            <Link to="/contact">Let's talk</Link>
+          </p>
+        </TextBox>
 
-      <Spacing size="54" />
+        <figure className="Talks-img">
+          <img src={talksImg} />
+          <figcaption>
+            At Balkan Ruby in 2019 talking about morality.
+          </figcaption>
+        </figure>
+      </div>
+
       <Spacing size="54" />
       <Spacing size="54" />
 
@@ -46,8 +57,6 @@ export default () => {
           <hr className="Talks-separator" />
         </span>
       ))}
-
-      <Spacing size="54" />
 
       <div className="Talks-cta">
         Looking for a speaker for your event?{" "}
