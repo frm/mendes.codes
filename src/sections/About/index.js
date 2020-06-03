@@ -3,11 +3,13 @@ import React from "react";
 import Spacing from "../../components/Spacing";
 import Highlight from "../../components/Highlight";
 import TextBox from "../../components/TextBox";
+import { ExternalLink, Link } from "../../components/Link";
 import GitHubLogo from "../../components/GitHubLogo";
 import TwitterLogo from "../../components/TwitterLogo";
-import { ExternalLink, Link } from "../../components/Link";
 
 import useMetadata from "../../hooks/useMetadata";
+
+import img from "./img.png";
 
 import "./style.scss";
 
@@ -31,7 +33,7 @@ export default () => {
     <div className="About">
       <TextBox>
         <p>
-          Yes, you guessed it. I'm the one they call{" "}
+          Yep, you guessed it. I'm the one they call{" "}
           <Highlight type="strong">Mendes</Highlight>.
         </p>
 
@@ -66,8 +68,8 @@ export default () => {
           Before returning to Subvisual, I spent some time at{" "}
           <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and at{" "}
           <ExternalLink to={utrustUrl}>Utrust</ExternalLink>. At the latter, I
-          helped raise a <em>very</em> successful ICO and build their novel
-          blockchain payments gateway.
+          helped raise a very successful ICO and build their novel blockchain
+          payments gateway.
         </p>
 
         <Spacing size="24" />
@@ -110,8 +112,8 @@ export default () => {
           I'm a <Link to="/talks">regular speaker</Link> at conferences and
           meetups, as well as lovely company, I've heard. I'm currently{" "}
           <strong>available for speaking engagements</strong>, if you are
-          looking for someone to speak at your conference, meetup or at your
-          company.
+          looking for someone to speak at your conference, meetup or
+          institution.
         </p>
 
         <Spacing size="24" />
@@ -135,6 +137,13 @@ export default () => {
           </ExternalLink>
         </p>
       </TextBox>
+
+      <figure className="About-img">
+        <img src={img} />
+        <figcaption>
+          Florence, Italy back in the far-off year of 2019
+        </figcaption>
+      </figure>
     </div>
   );
 };
