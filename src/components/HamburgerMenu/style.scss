@@ -1,0 +1,44 @@
+.HamburgerMenu {
+  --hamburger-line-height: 1px;
+  --menu-width: 20px;
+  --menu-height: 15px;
+  --pos-translate-amount: calc(var(--menu-height) / 2 -
+                                var(--hamburger-line-height) / 2);
+
+  --neg-translate-amount: calc(var(--pos-translate-amount) * -1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: var(--menu-width);
+  height: var(--menu-height);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .HamburgerMenu-line {
+    width: 100%;
+    height: var(--hamburger-line-height);
+    background-color: var(--secondary-color);
+
+    transform-origin: center center;
+
+    transition: all 0.25s ease-in;
+  }
+
+  &.HamburgerMenu--open {
+    .HamburgerMenu-line:first-child {
+      transform: translateY(var(--pos-translate-amount)) rotate(45deg);
+    }
+
+    .HamburgerMenu-line:last-child {
+      transform: translateY(var(--neg-translate-amount)) rotate(-45deg);
+    }
+
+    .HamburgerMenu-line:nth-child(2) {
+      opacity: 0;
+    }
+  }
+}

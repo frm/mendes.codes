@@ -1,3 +1,5 @@
+@import "../../styles/media";
+
 .Grid {
   display: flex;
   justify-content: center;
@@ -9,7 +11,7 @@
   max-width: var(--grid-size);
   padding: var(--size-24);
 
-  @media(min-width: 425px) {
+  @include tabletAndAbove {
     padding: var(--size-36);
   }
 }

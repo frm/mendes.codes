@@ -1,28 +1,50 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Highlight from "../Highlight"
+import Highlight from "../Highlight";
 
-import "./style.scss"
+import "./style.scss";
 
-export const NavLink = ({ to, children }) => {
+export const NavLink = ({ to, children, modifier }) => {
   const pathname = window.location.pathname;
-  if (to === pathname ) {
-    return (
-      <Link to={to} className="NavLink"><Highlight type="strong">{children}</Highlight></Link>
-    )
-  } else {
-    return <Link to={to} className="NavLink">{children}</Link>
-  }
-}
+  const classModifier =
+    modifier === "alternative" ? "NavLink--alternative" : "";
 
-export const ExternalNavLink = ({ to, children }) => {
-  const pathname = window.location.pathname;
-  if (to === pathname ) {
+  const className = `NavLink ${classModifier}`;
+
+  if (to === pathname) {
     return (
-      <a href={to} className="NavLink"><Highlight type="strong">{children}</Highlight></a>
-    )
+      <Link to={to} className={className}>
+        <Highlight modifier="strong">{children}</Highlight>
+      </Link>
+    );
   } else {
-    return <a href={to} className="NavLink">{children}</a>
+    return (
+      <Link to={to} className={className}>
+        {children}
+      </Link>
+    );
   }
-}
+};
+
+export const ExternalNavLink = ({ to, children, modifier }) => {
+  const pathname = window.location.pathname;
+  const classModifier =
+    modifier === "alternative" ? "NavLink--alternative" : "";
+
+  const className = `NavLink ${classModifier}`;
+
+  if (to === pathname) {
+    return (
+      <a href={to} className={className}>
+        <Highlight type="strong">{children}</Highlight>
+      </a>
+    );
+  } else {
+    return (
+      <a href={to} className={className}>
+        {children}
+      </a>
+    );
+  }
+};

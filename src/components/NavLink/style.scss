@@ -12,4 +12,8 @@
   &:hover {
     color: var(--tertiary-color);
   }
+
+  &.NavLink--alternative {
+    font-family: var(--font-family-serif);
+  }
 }
