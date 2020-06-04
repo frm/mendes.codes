@@ -9,7 +9,7 @@
 
   transition: all 0.1s ease-in;
 
-  &::visited {
+  &:visited {
     color: var(--secondary-color);
   }
 
