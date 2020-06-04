@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 
 import Highlight from "../Highlight";
 
 import "./style.scss";
 
 export default () => {
+  const location = useLocation();
+
   const verb =
     {
       "/": "codes",
       "/about": "is",
       "/open-source": "codes",
       "/talks": "talks",
-    }[window.location.pathname] || "codes";
+    }[location.pathname] || "codes";
 
   return (
     <Link to="/">
