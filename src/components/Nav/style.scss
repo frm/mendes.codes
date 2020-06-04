@@ -9,20 +9,22 @@
     width: 100%;
   }
 
-  .Nav-left {
+  .Nav-right {
+    position: relative;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
 
-    position: relative;
-    width: 100%;
+    // we need to find space for the button that is in an absolute position
+    padding-right: calc(20px + var(--size-24));
   }
 
-  .Nav-right {
+  .Nav-linkContainer {
     display: none;
   }
 
-  .Nav-menu {
+  .Nav-menuContent {
     height: 100%;
 
     display: flex;
@@ -32,22 +34,17 @@
   }
 
   @include desktop {
-    .Nav-left {
-      width: inherit;
-    }
-
-    .Nav-right {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
     .Nav-menu {
       display: none;
     }
 
-    .NavLink:not(:last-child) {
+    .Nav-linkContainer {
+      display: block;
+    }
+
+    .NavLink {
       margin-right: var(--size-24);
+      padding-right: 0;
     }
   }
 }

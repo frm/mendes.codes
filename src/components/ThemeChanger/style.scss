@@ -1,0 +1,13 @@
+.ThemeChanger {
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    fill: var(--tertiary-color);
+
+    &:hover {
+      fill: var(--secondary-color);
+    }
+  }
+}

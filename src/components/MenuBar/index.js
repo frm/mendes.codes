@@ -4,16 +4,16 @@ import HamburgerMenu from "../HamburgerMenu";
 
 import "./style.scss";
 
-export default ({ children }) => {
+export default ({ children, className }) => {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
   const modifier = modalIsOpen ? "MenuBar--open" : "";
-  const className = `MenuBar ${modifier}`;
+  const menubarClassName = `MenuBar ${modifier} ${className}`;
 
   return (
-    <div className={className}>
+    <div className={menubarClassName}>
       <div className="MenuBar-button">
         <HamburgerMenu onClick={toggleModal} />
       </div>

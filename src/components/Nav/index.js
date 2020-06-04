@@ -3,6 +3,7 @@ import { ExternalNavLink, NavLink } from "../NavLink";
 import Grid from "../Grid";
 import Title from "../Title";
 import MenuBar from "../MenuBar";
+import ThemeChanger from "../ThemeChanger";
 
 import "./style.scss";
 
@@ -11,8 +12,12 @@ export default () => (
     <Grid>
       <div className="Nav-container">
         <div className="Nav-left">
-          <MenuBar>
-            <div className="Nav-menu">
+          <Title />
+        </div>
+
+        <div className="Nav-right">
+          <MenuBar className="Nav-menu">
+            <div className="Nav-menuContent">
               <NavLink to="/about" modifier="alternative">
                 About
               </NavLink>
@@ -27,12 +32,16 @@ export default () => (
               </ExternalNavLink>
             </div>
           </MenuBar>
-          <Title />
-        </div>
-        <div className="Nav-right">
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/talks">Talks</NavLink>
-          <ExternalNavLink to="https://blog.mendes.codes">Blog</ExternalNavLink>
+
+          <ThemeChanger className="Nav-themeChanger" />
+
+          <div className="Nav-linkContainer">
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/talks">Talks</NavLink>
+            <ExternalNavLink to="https://blog.mendes.codes">
+              Blog
+            </ExternalNavLink>
+          </div>
         </div>
       </div>
     </Grid>
