@@ -1,5 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./style.scss";
 
-export default ({ children }) => <div className="TextBox">{children}</div>;
+const TextBox = ({ children }) => <div className="TextBox">{children}</div>;
+
+TextBox.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default TextBox;

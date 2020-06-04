@@ -20,7 +20,7 @@
       max-width: 250px;
 
       // this is a hack. approximately the image size + inner padding
-      @media(min-width: 500px) {
+      @media (min-width: 500px) {
         max-width: 400px;
       }
 
@@ -36,10 +36,11 @@
 
       color: var(--tertiary-color);
 
-      font-weight: bold;
-      text-transform: uppercase;
       font-size: var(--size-11);
+
+      font-weight: bold;
       line-height: var(--size-16);
+      text-transform: uppercase;
     }
   }
 }

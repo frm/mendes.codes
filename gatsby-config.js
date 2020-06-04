@@ -3,9 +3,10 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const siteMetadata = require("./site-meta-data.json");
 
 module.exports = {
-  siteMetadata: require("./site-meta-data.json"),
+  siteMetadata,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

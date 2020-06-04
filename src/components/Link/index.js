@@ -1,12 +1,29 @@
-import React from "react"
-import { Link as GatsbyLink } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link as GatsbyLink } from "gatsby";
 
-import "./style.scss"
+import "./style.scss";
 
-export const Link = ({ to, children }) => (
-  <GatsbyLink to={to} className="Link">{children}</GatsbyLink>
-)
+const Link = ({ to, children }) => (
+  <GatsbyLink to={to} className="Link">
+    {children}
+  </GatsbyLink>
+);
 
-export const ExternalLink = ({ to, children }) => (
-  <a href={to} className="Link">{children}</a>
-)
+Link.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+const ExternalLink = ({ to, children }) => (
+  <a href={to} className="Link">
+    {children}
+  </a>
+);
+
+ExternalLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+export { ExternalLink, Link };

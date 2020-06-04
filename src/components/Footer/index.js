@@ -1,10 +1,13 @@
-import React from "react"
-import Highlight from "../Highlight"
+import React from "react";
+import Highlight from "../Highlight";
 
-import "./style.scss"
+import "./style.scss";
 
 export default () => (
   <footer className="Footer">
-    <p>&copy; {new Date().getFullYear()} <Highlight type="strong">Fernando Mendes</Highlight></p>
+    <p>
+      &copy; {new Date().getFullYear()}{" "}
+      <Highlight type="strong">Fernando Mendes</Highlight>
+    </p>
   </footer>
 );

@@ -1,11 +1,16 @@
 {
-  "name": "gatsby-starter-delog",
-  "description": "A simplified blog for developers and designer. This starter built with Gatsby and Netlify CMS",
-  "author": "W3Layouts Team <info@w3layouts.com>",
-  "version": "1.6.0",
+  "name": "mendes.codes",
+  "description": "Personal website for @frm",
+  "author": "Fernando Mendes <fernando@mendes.codes>",
+  "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://github.com/frm/mendes.codes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frm/mendes.codes.git"
+  },
   "bugs": {
-    "url": "https://github.com/W3Layouts/gatsby-starter-delog/issues"
+    "url": "https://github.com/frm/mendes.codes/issues"
   },
   "dependencies": {
     "@reach/router": "^1.3.3",
@@ -27,30 +32,37 @@
     "netlify-cms-app": "^2.11.13",
     "node-sass": "^4.14.1",
     "prismjs": "^1.19.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-youtube": "^7.11.2"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "homepage": "https://github.com/W3Layouts/gatsby-starter-delog#readme",
-  "keywords": [
-    "gatsby",
-    "netlify cms"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/W3Layouts/gatsby-starter-delog.git"
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^13.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-order": "^4.0.0"
   },
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  }
+    "dev": "gatsby develop",
+    "lint": "eslint src/ *.js",
+    "lint-fix": "eslint --fix src/ *.js",
+    "lint-styles": "stylelint \"src/**/*.css\" \"src/**/*.scss\""
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 9"
+  ]
 }

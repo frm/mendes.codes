@@ -1,12 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types";
 import YouTube from "react-youtube";
 import Spacing from "../Spacing";
 import { ExternalLink } from "../Link";
 
 import "./style.scss";
 
-const renderVariation = (variation) => {
-  if (variation === null) return;
+const renderVariation = variation => {
+  if (variation === null) return null;
 
   return (
     <span className="Talk-variation">
@@ -16,14 +17,7 @@ const renderVariation = (variation) => {
   );
 };
 
-export default ({
-  videoId,
-  title,
-  event,
-  description,
-  variation,
-  slidesUrl,
-}) => {
+const Talk = ({ videoId, title, event, description, variation, slidesUrl }) => {
   const opts = {
     playerVars: {
       modestbranding: 1,
@@ -42,7 +36,7 @@ export default ({
 
       <div className="Talk-content">
         <YouTube
-          containerClassName={"Talk-video"}
+          containerClassName="Talk-video"
           videoId={videoId}
           opts={opts}
         />
@@ -64,3 +58,19 @@ export default ({
     </div>
   );
 };
+
+Talk.propTypes = {
+  videoId: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  event: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  slidesUrl: PropTypes.string,
+  variation: PropTypes.object,
+};
+
+Talk.defaultProps = {
+  slidesUrl: null,
+  variation: null,
+};
+
+export default Talk;

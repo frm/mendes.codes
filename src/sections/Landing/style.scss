@@ -48,10 +48,11 @@
     figcaption {
       color: var(--tertiary-color);
 
-      font-weight: bold;
-      text-transform: uppercase;
       font-size: var(--size-11);
+
+      font-weight: bold;
       line-height: var(--size-16);
+      text-transform: uppercase;
     }
   }
 }

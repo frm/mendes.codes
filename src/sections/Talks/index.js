@@ -55,8 +55,8 @@ export default () => {
       <Spacing size="54" />
       <Spacing size="54" />
 
-      {talks.map((talk, idx) => (
-        <span key={idx}>
+      {talks.map(talk => (
+        <span key={talk.name}>
           <Talk {...talk} />
           <hr className="Talks-separator" />
         </span>

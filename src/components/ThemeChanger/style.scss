@@ -3,6 +3,14 @@
     cursor: pointer;
   }
 
+  &:focus {
+    outline: 0;
+
+    svg {
+      fill: var(--secondary-color);
+    }
+  }
+
   svg {
     fill: var(--tertiary-color);
 

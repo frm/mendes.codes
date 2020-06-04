@@ -1,10 +1,10 @@
-import React from "react"
-import Helmet from 'react-helmet'
+import React from "react";
+import Helmet from "react-helmet";
 
-import useMetadata from "../../hooks/useMetadata"
+import useMetadata from "../../hooks/useMetadata";
 
 const Meta = () => {
-  const { title, description } = useMetadata()
+  const { title, description } = useMetadata();
 
   return (
     <Helmet>
@@ -12,6 +12,6 @@ const Meta = () => {
       <meta name="description" content={description} />
     </Helmet>
   );
-}
+};
 
-export default Meta
+export default Meta;

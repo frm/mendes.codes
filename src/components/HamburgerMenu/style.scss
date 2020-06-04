@@ -3,7 +3,7 @@
   --menu-width: 20px;
   --menu-height: 15px;
   --pos-translate-amount: calc(var(--menu-height) / 2 -
-                                var(--hamburger-line-height) / 2);
+  var(--hamburger-line-height) / 2);
 
   --neg-translate-amount: calc(var(--pos-translate-amount) * -1);
 
@@ -18,9 +18,14 @@
     cursor: pointer;
   }
 
+  &:focus {
+    outline: 0;
+  }
+
   .HamburgerMenu-line {
     width: 100%;
     height: var(--hamburger-line-height);
+
     background-color: var(--secondary-color);
 
     transform-origin: center center;

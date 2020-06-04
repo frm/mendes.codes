@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import HamburgerMenu from "../HamburgerMenu";
 
 import "./style.scss";
 
-export default ({ children, className }) => {
+const MenuBar = ({ children, className }) => {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
@@ -22,3 +23,14 @@ export default ({ children, className }) => {
     </div>
   );
 };
+
+MenuBar.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
+
+MenuBar.defaultProps = {
+  className: "",
+};
+
+export default MenuBar;

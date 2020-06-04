@@ -30,8 +30,8 @@ body.light {
   --secondary-highlight-color: var(--color-opal);
 
   ::selection {
-    color: var(--color-smoky-black);
     background-color: var(--color-opal);
+    color: var(--color-smoky-black);
   }
 }
 
@@ -43,33 +43,35 @@ body.dark {
   --secondary-highlight-color: var(--color-cyber-grape);
 
   ::selection {
-    color: var(--color-white);
     background-color: var(--color-beaver);
+    color: var(--color-white);
   }
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  font-family: var(--font-family-sans-serif);
 
   font-size: var(--size-16);
   line-height: var(--size-24);
-  font-family: var(--font-family-sans-serif);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
 
   overflow-y: scroll;
 }
 
 #___gatsby {
-    height: 100vh;
+  height: 100vh;
 }
 
 #gatsby-focus-wrapper {
-    height: 100vh;
+  height: 100vh;
 }
 
 strong {
@@ -82,10 +84,12 @@ em {
 
 a {
   color: inherit;
+
   text-decoration: none;
 
   &:visited, &:hover, &:focus {
     color: inherit;
+
     text-decoration: none;
   }
 }

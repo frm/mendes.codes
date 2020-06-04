@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
 
@@ -6,13 +7,9 @@ import Highlight from "../Highlight";
 
 import "./style.scss";
 
-export const NavLink = ({ to, children, modifier }) => {
+const NavLink = ({ to, children, modifier }) => {
   const location = useLocation();
-
-  const classModifier =
-    modifier === "alternative" ? "NavLink--alternative" : "";
-
-  const className = `NavLink ${classModifier}`;
+  const className = `NavLink NavLink--${modifier}`;
 
   if (to === location.pathname) {
     return (
@@ -20,22 +17,28 @@ export const NavLink = ({ to, children, modifier }) => {
         <Highlight modifier="strong">{children}</Highlight>
       </Link>
     );
-  } else {
-    return (
-      <Link to={to} className={className}>
-        {children}
-      </Link>
-    );
   }
+
+  return (
+    <Link to={to} className={className}>
+      {children}
+    </Link>
+  );
 };
 
-export const ExternalNavLink = ({ to, children, modifier }) => {
+NavLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  modifier: PropTypes.string,
+  to: PropTypes.string.isRequired,
+};
+
+NavLink.defaultProps = {
+  modifier: "regular",
+};
+
+const ExternalNavLink = ({ to, children, modifier }) => {
   const location = useLocation();
-
-  const classModifier =
-    modifier === "alternative" ? "NavLink--alternative" : "";
-
-  const className = `NavLink ${classModifier}`;
+  const className = `NavLink NavLink--${modifier}`;
 
   if (to === location.pathname) {
     return (
@@ -43,11 +46,23 @@ export const ExternalNavLink = ({ to, children, modifier }) => {
         <Highlight type="strong">{children}</Highlight>
       </a>
     );
-  } else {
-    return (
-      <a href={to} className={className}>
-        {children}
-      </a>
-    );
   }
+
+  return (
+    <a href={to} className={className}>
+      {children}
+    </a>
+  );
 };
+
+ExternalNavLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  modifier: PropTypes.string,
+  to: PropTypes.string.isRequired,
+};
+
+ExternalNavLink.defaultProps = {
+  modifier: "regular",
+};
+
+export { ExternalNavLink, NavLink };

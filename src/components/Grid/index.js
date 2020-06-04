@@ -1,13 +1,18 @@
-import React from "react"
+import React from "react";
+import PropTypes from "prop-types";
 
-import "./style.scss"
+import "./style.scss";
 
-export default ({ children }) => {
+const Grid = ({ children }) => {
   return (
     <div className="Grid">
-      <div className="Grid-content">
-        {children}
-      </div>
+      <div className="Grid-content">{children}</div>
     </div>
-  )
-}
+  );
+};
+
+Grid.propTypes = {
+  children: PropTypes.object.isRequired,
+};
+
+export default Grid;
