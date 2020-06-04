@@ -70,7 +70,10 @@ export default () => {
         </TextBox>
 
         <figure className="Landing-img">
-          <img src={landingImg} />
+          <img
+            src={landingImg}
+            alt="Me at Balkan Ruby in 2019 talking a bit about morality and the codes."
+          />
           <figcaption>
             At Balkan Ruby in 2019 talking a bit about morality and the codes.
           </figcaption>

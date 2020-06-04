@@ -32,7 +32,10 @@ export default () => {
   return (
     <div className="About">
       <figure className="About-img">
-        <img src={aboutImg} />
+        <img
+          alt="Me in Florence, Italy back in the far-off year of 2019"
+          src={aboutImg}
+        />
         <figcaption>
           Florence, Italy back in the far-off year of 2019
         </figcaption>

@@ -2,7 +2,7 @@ import React from "react";
 
 import Spacing from "../../components/Spacing";
 import TextBox from "../../components/TextBox";
-import { ExternalLink, Link } from "../../components/Link";
+import { ExternalLink } from "../../components/Link";
 import Talk from "../../components/Talk";
 
 import useMetadata from "../../hooks/useMetadata";
@@ -44,7 +44,10 @@ export default () => {
         </TextBox>
 
         <figure className="Talks-img">
-          <img src={talksImg} />
+          <img
+            src={talksImg}
+            alt="Me at a conference, but just as easily could be me, at your event"
+          />
           <figcaption>This could be me, at your event.</figcaption>
         </figure>
       </div>
