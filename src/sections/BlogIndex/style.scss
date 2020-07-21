@@ -1,0 +1,13 @@
+.BlogIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .BlogIndex-entry {
+    max-width: calc(6 * var(--col-size) + 5 * var(--gap-size));
+  }
+
+  .BlogIndex-separator {
+    width: 50%;
+  }
+}

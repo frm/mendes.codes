@@ -24,11 +24,13 @@ const Template = ({
 
 Template.propTypes = {
   data: PropTypes.shape({
-    frontmatter: PropTypes.shape({
-      date: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        date: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+      html: PropTypes.string.isRequired,
     }).isRequired,
-    html: PropTypes.string.isRequired,
   }).isRequired,
 };
 

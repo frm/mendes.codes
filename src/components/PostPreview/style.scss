@@ -1,0 +1,25 @@
+.PostPreview {
+  .PostPreview-title {
+    font-family: var(--font-family-serif);
+    font-size: var(--size-24);
+    line-height: var(--size-36);
+  }
+
+  .PostPreview-date {
+    color: var(--tertiary-color);
+
+    font-size: var(--size-11);
+
+    font-weight: bold;
+    line-height: var(--size-16);
+    text-transform: uppercase;
+  }
+
+  .PostPreview-excerpt {
+    color: var(--secondary-color);
+
+    // the blog should operate on a different ratio, golden ratio
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
