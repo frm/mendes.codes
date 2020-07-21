@@ -11,7 +11,7 @@ const NavLink = ({ to, children, modifier }) => {
   const location = useLocation();
   const className = `NavLink NavLink--${modifier}`;
 
-  if (to === location.pathname) {
+  if (location.pathname.includes(to)) {
     return (
       <Link to={to} className={className}>
         <Highlight modifier="strong">{children}</Highlight>
@@ -40,7 +40,7 @@ const ExternalNavLink = ({ to, children, modifier }) => {
   const location = useLocation();
   const className = `NavLink NavLink--${modifier}`;
 
-  if (to === location.pathname) {
+  if (location.pathname.includes(to)) {
     return (
       <a href={to} className={className}>
         <Highlight type="strong">{children}</Highlight>

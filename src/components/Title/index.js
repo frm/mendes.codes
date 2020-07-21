@@ -15,6 +15,7 @@ export default () => {
       "/about": "is",
       "/open-source": "codes",
       "/talks": "talks",
+      "/blog": "blogs",
     }[location.pathname] || "codes";
 
   return (

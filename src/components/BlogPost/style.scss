@@ -1,0 +1,33 @@
+.BlogPost {
+  display: flex;
+  justify-content: center;
+
+  .BlogPost-container {
+    max-width: calc(9 * var(--col-size) + 8 * var(--gap-size));
+  }
+
+  .BlogPost-title {
+    font-family: var(--font-family-serif);
+    font-size: var(--size-36);
+    line-height: var(--size-36);
+    font-weight: bold;
+  }
+
+  .BlogPost-date {
+    color: var(--tertiary-color);
+
+    font-size: var(--size-11);
+
+    font-weight: bold;
+    line-height: var(--size-16);
+    text-transform: uppercase;
+  }
+
+  .BlogPost-content {
+    color: var(--secondary-color);
+
+    // the blog should operate on a different ratio, golden ratio
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

@@ -2,6 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
+import BlogPost from "../components/BlogPost";
+
+import Layout from "../components/Layout";
+import Meta from "../components/Meta";
+
 const Template = ({
   data: {
     markdownRemark: {
@@ -10,15 +15,11 @@ const Template = ({
     },
   },
 }) => (
-  <div className="blog-post-container">
-    <div className="blog-post">
-      <h1>{title}</h1>
-      <h2>{date}</h2>
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </div>
+  <div>
+    <Layout>
+      <Meta />
+      <BlogPost title={title} date={date} html={html} />
+    </Layout>
   </div>
 );
 

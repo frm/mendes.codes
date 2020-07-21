@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalNavLink, NavLink } from "../NavLink";
+import { NavLink } from "../NavLink";
 import Grid from "../Grid";
 import Title from "../Title";
 import MenuBar from "../MenuBar";
@@ -24,12 +24,9 @@ export default () => (
               <NavLink to="/talks" modifier="alternative">
                 Talks
               </NavLink>
-              <ExternalNavLink
-                modifier="alternative"
-                to="https://blog.mendes.codes"
-              >
+              <NavLink modifier="alternative" to="/blog">
                 Blog
-              </ExternalNavLink>
+              </NavLink>
             </div>
           </MenuBar>
 
@@ -38,9 +35,7 @@ export default () => (
           <div className="Nav-linkContainer">
             <NavLink to="/about">About</NavLink>
             <NavLink to="/talks">Talks</NavLink>
-            <ExternalNavLink to="https://blog.mendes.codes">
-              Blog
-            </ExternalNavLink>
+            <NavLink to="/blog">Blog</NavLink>
           </div>
         </div>
       </div>
