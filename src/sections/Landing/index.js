@@ -1,5 +1,6 @@
 import React from "react";
 
+import InlinedText from "../../components/InlinedText";
 import Spacing from "../../components/Spacing";
 import Highlight from "../../components/Highlight";
 import { ExternalLink } from "../../components/Link";
@@ -51,14 +52,18 @@ export default () => {
 
           <p>
             Follow me at{" "}
-            <ExternalLink to={twitterUrl}>
-              <TwitterLogo />
-              justmnds
-            </ExternalLink>{" "}
+            <InlinedText>
+              <ExternalLink to={twitterUrl}>
+                <TwitterLogo />
+                justmnds
+              </ExternalLink>
+            </InlinedText>{" "}
             and{" "}
-            <ExternalLink to={githubUrl}>
-              <GitHubLogo /> frm
-            </ExternalLink>
+            <InlinedText>
+              <ExternalLink to={githubUrl}>
+                <GitHubLogo /> frm
+              </ExternalLink>
+            </InlinedText>
           </p>
 
           <Spacing size="54" />

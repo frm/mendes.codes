@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ExternalLink } from "../../components/Link";
+import InlinedText from "../../components/InlinedText";
 import Spacing from "../../components/Spacing";
 import GitHubLogo from "../../components/GitHubLogo";
 import TwitterLogo from "../../components/TwitterLogo";
@@ -24,13 +25,17 @@ export default () => {
         <p>
           I also tend to voice my opinions on{" "}
           <ExternalLink to={twitterUrl}>
-            <TwitterLogo /> Twitter{" "}
+            <InlinedText>
+              <TwitterLogo /> Twitter{" "}
+            </InlinedText>
           </ExternalLink>{" "}
           . Feel free to ask me any questions you might have, say hi or even
           poke around my{" "}
           <ExternalLink to={githubUrl}>
             {" "}
-            <GitHubLogo /> GitHub{" "}
+            <InlinedText>
+              <GitHubLogo /> GitHub
+            </InlinedText>{" "}
           </ExternalLink>
           .
         </p>

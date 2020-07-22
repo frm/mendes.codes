@@ -1,5 +1,6 @@
 import React from "react";
 
+import InlinedText from "../../components/InlinedText";
 import Spacing from "../../components/Spacing";
 import Highlight from "../../components/Highlight";
 import TextBox from "../../components/TextBox";
@@ -60,15 +61,19 @@ export default () => {
 
         <p>
           You can find me on{" "}
-          <ExternalLink to={twitterUrl}>
-            {" "}
-            <TwitterLogo /> justmnds{" "}
-          </ExternalLink>{" "}
+          <InlinedText>
+            <ExternalLink to={twitterUrl}>
+              {" "}
+              <TwitterLogo /> justmnds{" "}
+            </ExternalLink>
+          </InlinedText>{" "}
           and{" "}
-          <ExternalLink to={githubUrl}>
-            {" "}
-            <GitHubLogo /> frm{" "}
-          </ExternalLink>
+          <InlinedText>
+            <ExternalLink to={githubUrl}>
+              {" "}
+              <GitHubLogo /> frm{" "}
+            </ExternalLink>
+          </InlinedText>
           .
         </p>
 
