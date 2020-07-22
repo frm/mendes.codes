@@ -16,19 +16,36 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/src/fonts/`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
+              aliases: {
+                sh: "bash",
+                vimscript: "vim",
+              },
               noInlineHighlight: false,
             },
           },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 950,
+              linkImagesToOriginal: false,
+              quality: 100,
+            },
+          },
+
           {
             resolve: "gatsby-remark-emojis",
           },
@@ -61,5 +78,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-svgr`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sharp`,
   ],
 };

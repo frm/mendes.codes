@@ -2,40 +2,59 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
-import BlogPost from "../components/BlogPost";
+import BlogPost from "../../sections/BlogPost";
+import BlogPostFooter from "../../sections/BlogPostFooter";
+import ShareLinks from "../../sections/ShareLinks";
 
-import Layout from "../components/Layout";
-import Meta from "../components/Meta";
+import Spacing from "../../components/Spacing";
+import Separator from "../../components/Separator";
+import Layout from "../../components/Layout";
+import Meta from "../../components/Meta";
 
-const Template = ({
+import "./style.scss";
+
+const PostTemplate = ({
   data: {
     markdownRemark: {
-      frontmatter: { title, date },
+      frontmatter: { title, date, slug },
       html,
     },
   },
 }) => (
-  <div>
+  <div className="PostTemplate">
     <Layout>
       <Meta />
       <BlogPost title={title} date={date} html={html} />
+
+      <Spacing size="81" />
+
+      <div className="PostTemplate-share">
+        Share this blog post:
+        <br />
+        <ShareLinks slug={slug} />
+      </div>
+
+      <Separator />
+
+      <BlogPostFooter />
     </Layout>
   </div>
 );
 
-Template.propTypes = {
+PostTemplate.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
         date: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
+        slug: PropTypes.string.isRequired,
       }).isRequired,
       html: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };
 
-export default Template;
+export default PostTemplate;
 
 export const pageQuery = graphql`
   query($slug: String!) {

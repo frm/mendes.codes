@@ -3,6 +3,7 @@ import React from "react";
 import Spacing from "../../components/Spacing";
 import TextBox from "../../components/TextBox";
 import { ExternalLink } from "../../components/Link";
+import Separator from "../../components/Separator";
 import Talk from "../../components/Talk";
 
 import useMetadata from "../../hooks/useMetadata";
@@ -56,9 +57,9 @@ export default () => {
       <Spacing size="54" />
 
       {talks.map(talk => (
-        <span key={talk.name}>
+        <span key={talk.title}>
           <Talk {...talk} />
-          <hr className="Talks-separator" />
+          <Separator />
         </span>
       ))}
 

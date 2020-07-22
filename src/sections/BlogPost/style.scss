@@ -3,14 +3,16 @@
   justify-content: center;
 
   .BlogPost-container {
+    width: 100%;
     max-width: calc(9 * var(--col-size) + 8 * var(--gap-size));
   }
 
   .BlogPost-title {
     font-family: var(--font-family-serif);
     font-size: var(--size-36);
-    line-height: var(--size-36);
     font-weight: bold;
+
+    line-height: var(--size-36);
   }
 
   .BlogPost-date {

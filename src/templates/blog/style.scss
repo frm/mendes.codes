@@ -1,0 +1,11 @@
+.PostTemplate {
+  .PostTemplate-share {
+    width: 100%;
+
+    color: var(--tertiary-color);
+
+    font-size: 14px; // off grid, needs to be
+    line-height: var(--size-24);
+    text-align: center;
+  }
+}

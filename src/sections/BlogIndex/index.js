@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Separator from "../../components/Separator";
 import Spacing from "../../components/Spacing";
 import PostPreview from "../../components/PostPreview";
 
@@ -8,11 +9,11 @@ import "./style.scss";
 
 const BlogIndex = ({ posts }) => {
   const Posts = posts.map(({ id, frontmatter }) => (
-    <div className="BlogIndex-entry">
-      <PostPreview key={id} post={frontmatter} />
+    <div className="BlogIndex-entry" key={id}>
+      <PostPreview post={frontmatter} />
       <Spacing size="54" />
 
-      <hr className="BlogIndex-separator" />
+      <Separator />
 
       <Spacing size="54" />
     </div>

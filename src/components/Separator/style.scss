@@ -1,0 +1,17 @@
+.Separator {
+  height: 1px;
+  max-width: calc(6 * var(--col-size) + 5 * var(--gap-size));
+  margin: var(--size-54) auto;
+
+  border: 0;
+}
+
+// Dark theme rules
+body.dark .Separator {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+// Light theme rules
+body.light .Separator {
+  background-image: linear-gradient(to right, rgba(11, 9, 6, 0), rgba(11, 9, 6, 0.75), rgba(11, 9, 6, 0));
+}

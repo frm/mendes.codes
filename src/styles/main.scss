@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Fira&display=swap');
-
 :root {
   --color-beaver: #A17C6B;
   --color-cyber-grape: #54426B;
@@ -11,6 +9,7 @@
   --color-white : #FFFFFF;
   --font-family-sans-serif: 'Fira', sans-serif;
   --font-family-serif: 'Playfair Display', serif;
+  --font-family-mono: 'Fira Code', monospace;
   --grid-size: 1140px;
   --size-7: 7px;
   --size-11: 11px;
@@ -18,6 +17,8 @@
   --size-24: 24px;
   --size-36: 36px;
   --size-54: 54px;
+  --size-81: 81px;
+  --size-121: 121px;
   --col-size: 60px;
   --gap-size: 48px;
 }

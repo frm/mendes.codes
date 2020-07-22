@@ -12,7 +12,7 @@ const Grid = ({ children }) => {
 };
 
 Grid.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Grid;

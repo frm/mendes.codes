@@ -48,4 +48,20 @@
       padding-top: var(--size-54);
     }
   }
+
+  &.Spacing--81 {
+    padding-top: calc(var(--size-81) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-81);
+    }
+  }
+
+  &.Spacing--121 {
+    padding-top: calc(var(--size-121) / 2);
+
+    @include tabletAndAbove {
+      padding-top: var(--size-121);
+    }
+  }
 }

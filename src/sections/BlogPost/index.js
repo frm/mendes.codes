@@ -1,9 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Spacing from "../Spacing";
+import Spacing from "../../components/Spacing";
+
+import "prismjs/themes/prism.css";
+import "gatsby-prismjs-dracula";
 
 import "./style.scss";
+import "./override.scss";
 
 const BlogPost = ({ html, title, date }) => (
   <div className="BlogPost">
@@ -14,8 +18,7 @@ const BlogPost = ({ html, title, date }) => (
 
       <span className="BlogPost-date">{date}</span>
 
-      <Spacing size="54" />
-      <Spacing size="36" />
+      <Spacing size="121" />
 
       <div
         className="BlogPost-content"

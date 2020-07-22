@@ -1,0 +1,141 @@
+@import "../../styles/media";
+
+.BlogPost {
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: var(--size-81) 0 var(--size-24);
+
+    font-family: var(--font-family-serif);
+  }
+
+  p {
+    margin: var(--size-24) auto;
+  }
+
+  a {
+    padding: 2px 4px;
+
+    background: linear-gradient(to top, var(--secondary-highlight-color) 50%, transparent 50%);
+    color: var(--secondary-color);
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: all 0.1s ease-in;
+
+    &:visited {
+      color: var(--secondary-color);
+    }
+
+    &:hover {
+      background: linear-gradient(to top, var(--secondary-highlight-color) 50%, transparent 50%);
+      color: var(--tertiary-color);
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  hr {
+    max-width: calc(6 * var(--col-size) + 5 * var(--gap-size));
+    margin: var(--size-54) auto;
+
+    border: none;
+
+    text-align: center;
+
+    &:after {
+      content: "• • •";
+
+      color: var(--secondary-color);
+
+      font-size: var(--size-24);
+    }
+  }
+
+  blockquote {
+    position: relative;
+
+    padding: 0 var(--size-11);
+    margin: var(--size-24);
+
+    font-family: var(--font-family-serif);
+    font-size: var(--size-16);
+    font-style: italic;
+    line-height: var(--size-24);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: inline-block;
+      width: 4px;
+      height: 100%;
+
+      background-color: var(--tertiary-color);
+    }
+
+    @include desktop {
+      padding: 0 var(--size-16);
+      margin: var(--size-36);
+
+      font-size: var(--size-24);
+      line-height: var(--size-36);
+    }
+
+    p:last-child {
+      font-size: var(--size-16);
+      font-weight: bold;
+      line-height: var(--size-24);
+    }
+  }
+
+  code[class*="language-"], pre[class*="language-"] {
+    font-family: var(--font-family-mono);
+    font-weight: 400;
+    text-shadow: none;
+
+    &:global(.language-css) :global(.token.string),
+    :global(.style) :global(.token.string),
+    :global(.token.entity),
+    :global(.token.operator),
+    :global(.token.url) {
+      background: none;
+    }
+  }
+
+  pre[class*="language-"] {
+    max-width: 100%;
+
+    padding: var(--size-24);
+  }
+
+}
+
+// Dark theme overrides
+body.dark .BlogPost {
+  pre[class*="language-"] ::selection,
+  pre[class*="language-"]::selection,
+  code[class*="language-"] ::selection,
+  code[class*="language-"]::selection {
+    background-color: var(--color-beaver);
+    color: var(--color-white);
+  }
+}
+
+body.light .BlogPost {
+  pre[class*="language-"] ::selection,
+  pre[class*="language-"]::selection,
+  code[class*="language-"] ::selection,
+  code[class*="language-"]::selection {
+    background-color: var(--color-opal);
+    color: var(--color-smoky-black);
+  }
+}
