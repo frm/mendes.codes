@@ -1,6 +1,6 @@
 ---
 slug: /blog/you-must-return-here-with-a-shrubbery
-title: "You must return here with a shrubbery: the pixels camp treasure hunt"
+title: "You must return here with a shrubbery: the Pixels Camp treasure hunt"
 date: 2019-03-05
 excerpt: >
   This is the story of how I locked myself inside my room for 29 hours and only
