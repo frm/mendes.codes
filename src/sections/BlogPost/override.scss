@@ -67,6 +67,7 @@
     font-size: var(--size-16);
     font-style: italic;
     line-height: var(--size-24);
+    word-break: break-word;
 
     &::before {
       content: "";
@@ -117,6 +118,9 @@
     padding: var(--size-24);
   }
 
+  :not(pre) > code[class*="language-"] {
+    word-break: break-word;
+  }
 }
 
 // Dark theme overrides
