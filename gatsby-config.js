@@ -131,7 +131,7 @@ module.exports = {
     "gatsby-plugin-dark-mode",
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-svgr`,
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-sharp`,
   ],
 };
