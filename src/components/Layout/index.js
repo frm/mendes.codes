@@ -15,9 +15,7 @@ const Layout = ({ children }) => {
           <Nav />
 
           <Grid>
-            <Spacing size="36" />
-            <Spacing size="36" />
-            <Spacing size="36" />
+            <Spacing size="81" />
 
             {children}
           </Grid>
