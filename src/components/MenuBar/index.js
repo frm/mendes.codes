@@ -13,6 +13,10 @@ const MenuBar = ({ children, className }) => {
   const modifier = modalIsOpen ? "MenuBar--open" : "";
   const menubarClassName = `MenuBar ${modifier} ${className}`;
 
+  React.useEffect(() => {
+    document.body.style.overflowY = modalIsOpen ? "hidden" : "scroll";
+  }, [modalIsOpen]);
+
   return (
     <div className={menubarClassName}>
       <div className="MenuBar-button">
