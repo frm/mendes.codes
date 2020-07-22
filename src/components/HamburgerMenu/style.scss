@@ -2,8 +2,8 @@
   --hamburger-line-height: 1px;
   --menu-width: 20px;
   --menu-height: 15px;
-  --pos-translate-amount: calc(var(--menu-height) / 2 - var(--hamburger-line-height) / 2);
-  --neg-translate-amount: calc(var(--pos-translate-amount) * (-1));
+  --pos-translate-amount: calc((var(--menu-height) - var(--hamburger-line-height)) / 2);
+  --neg-translate-amount: calc(var(--pos-translate-amount) * -1);
 
   display: flex;
   flex-direction: column;
