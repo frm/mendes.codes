@@ -34,6 +34,14 @@
       background: linear-gradient(to top, var(--secondary-highlight-color) 50%, transparent 50%);
       color: var(--tertiary-color);
     }
+
+    &.no-highlight {
+      background: none;
+
+      &:hover {
+        background: none;
+      }
+    }
   }
 
   img {
