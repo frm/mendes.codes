@@ -1,5 +1,5 @@
 ---
-slug: /blog/a-look-into-bloom-filters-with-ruby
+slug: /blog/mix-format-from-anywhere
 title: "mix format from anywhere (or just in umbrella apps)"
 date: 2018-04-23
 excerpt: >
