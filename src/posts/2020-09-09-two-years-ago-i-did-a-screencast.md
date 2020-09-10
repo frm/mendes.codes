@@ -36,6 +36,9 @@ ahead. I created a [repo for community questions and suggestions][community-repo
 in order to keep the main repo clean. Help and feedback is invaluable. Hit me
 with all you have.
 
+I would also recommend following the [screencast Twitter account][bots_twitter]
+for updates.
+
 I really hope you enjoy!
 
 Remember to keep your mental health in check, folks.
@@ -48,3 +51,4 @@ Mendes
 [youtube]: https://youtu.be/1pzxggGYe9M
 [repo]: https://github.com/frm/beware_of_the_software
 [community-repo]: https://github.com/frm/bots_community
+[bots_twitter]: https://twitter.com/SoftwareBeware
