@@ -18,6 +18,7 @@ export default () => {
   const {
     socials: { twitter: twitterUrl, github: githubUrl, email },
     links: {
+      closer: closerUrl,
       subvisual: subvisualUrl,
       thoughtbot: thoughtbotUrl,
       utrust: utrustUrl,
@@ -25,6 +26,7 @@ export default () => {
       coderdojo: coderdojoUrl,
       rubyconfpt: rubyconfptUrl,
       mirrorconf: mirrorconfUrl,
+      alchemy: alchemyconfUrl,
       bragajs: bragajsUrl,
       bragabeam: bragabeamUrl,
     },
@@ -51,10 +53,16 @@ export default () => {
         <Spacing size="24" />
 
         <p>
-          I'm a software engineer at{" "}
-          <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink> where I build
-          awesome web apps using <strong>Elixir</strong>. I'm currently living
-          in sunny ole Portugal, specifically in Braga.
+          I'm currently building a new decentralised social hub called{" "}
+          <ExternalLink to={closerUrl}>Closer</ExternalLink>.
+        </p>
+
+        <Spacing size="24" />
+
+        <p>
+          I'm also a software engineer at{" "}
+          <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>, currently
+          living in sunny ol' Portugal.
         </p>
 
         <Spacing size="24" />
@@ -64,7 +72,7 @@ export default () => {
           <InlinedText>
             <ExternalLink to={twitterUrl}>
               {" "}
-              <TwitterLogo /> justmnds{" "}
+              <TwitterLogo /> 0xfrm{" "}
             </ExternalLink>
           </InlinedText>{" "}
           and{" "}
@@ -80,7 +88,7 @@ export default () => {
         <Spacing size="24" />
 
         <p>
-          Before returning to Subvisual, I spent some time at{" "}
+          I spent some time at{" "}
           <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and at{" "}
           <ExternalLink to={utrustUrl}>Utrust</ExternalLink>. At the latter, I
           helped raise a very successful ICO and build their novel blockchain
@@ -125,9 +133,9 @@ export default () => {
 
         <p>
           I'm a <Link to="/talks">regular speaker</Link> at conferences and
-          meetups, as well as lovely company, I've heard. I'm currently{" "}
-          <strong>available for speaking engagements</strong>, if you are
-          looking for someone to speak at your conference, meetup or
+          meetups, as well as being lovely company or so I've heard. I'm
+          currently <strong>available for speaking engagements</strong>, if you
+          are looking for someone to speak at your conference, meetup or
           institution.
         </p>
 
@@ -138,9 +146,11 @@ export default () => {
           organise{" "}
           <ExternalLink to={rubyconfptUrl}>Ruby Conf Portugal</ExternalLink>,{" "}
           <ExternalLink to={mirrorconfUrl}>Mirror Conf</ExternalLink>,{" "}
-          <ExternalLink to={bragajsUrl}>Braga.js</ExternalLink> and{" "}
-          <ExternalLink to={bragabeamUrl}>Braga.BEAM</ExternalLink>. If you need
-          help with your community event, feel free to reach out.
+          <ExternalLink to={bragajsUrl}>Braga.js</ExternalLink>,{" "}
+          <ExternalLink to={bragabeamUrl}>Braga.BEAM</ExternalLink> and, most
+          recently, the brand new{" "}
+          <ExternalLink to={alchemyconfUrl}>Alchemy Conf</ExternalLink>. If you
+          need help with your community event, feel free to reach out.
         </p>
 
         <Spacing size="24" />

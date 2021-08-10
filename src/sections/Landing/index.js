@@ -17,6 +17,7 @@ import "./style.scss";
 export default () => {
   const {
     links: {
+      closer: closerUrl,
       subvisual: subvisualUrl,
       thoughtbot: thoughtbotUrl,
       utrust: utrustUrl,
@@ -28,7 +29,13 @@ export default () => {
     <div className="Landing">
       <div className="Landing-tagline">
         <p>
-          I'm <Highlight type="strong">mendes</Highlight> and I codes.
+          I'm <Highlight type="strong">mendes</Highlight> and I codes. Mostly in
+          the crypto space.
+        </p>
+
+        <p>
+          I'm currently building a new decentralised social hub called{" "}
+          <ExternalLink to={closerUrl}>Closer</ExternalLink>.
         </p>
       </div>
 
@@ -37,14 +44,16 @@ export default () => {
           <Spacing size="54" />
 
           <p>
-            I'm a software engineer at{" "}
+            When I'm not doing that, I'm a software engineer at{" "}
             <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>. Formerly
             at <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and{" "}
             <ExternalLink to={utrustUrl}>Utrust</ExternalLink>.
           </p>
 
+          <Spacing size="54" />
+
           <p>
-            I do a lot of public speaking, blogging, volunteering, teaching and
+            I do a bunch public speaking, blogging, volunteering, teaching and
             open sourcing.
           </p>
 
@@ -55,7 +64,7 @@ export default () => {
             <InlinedText>
               <ExternalLink to={twitterUrl}>
                 <TwitterLogo />
-                justmnds
+                0xfrm
               </ExternalLink>
             </InlinedText>{" "}
             and{" "}

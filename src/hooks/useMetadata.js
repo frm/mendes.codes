@@ -12,6 +12,7 @@ export default function useMetadata() {
             siteUrl
             description
             links {
+              closer
               subvisual
               thoughtbot
               utrust
@@ -19,6 +20,7 @@ export default function useMetadata() {
               coderdojo
               rubyconfpt
               mirrorconf
+              alchemy
               bragajs
               bragabeam
             }

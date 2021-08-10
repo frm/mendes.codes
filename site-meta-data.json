@@ -1,13 +1,14 @@
 {
   "title": "mendes.codes",
   "siteUrl": "https://mendes.codes",
-  "description": "Mendes is a software engineer at Subvisual, working with Elixir and distributed systems. Looking for a speaker for your conference, meetup or event? Let's talk.",
+  "description": "Mendes (frm.eth) is building Closer, a decentralised social hub. He's also software engineer at Subvisual, working with Elixir and distributed systems. Looking for a speaker for your conference, meetup or event? Let's talk.",
   "socials": {
-    "twitter": "https://twitter.com/justmnds",
+    "twitter": "https://twitter.com/0xfrm",
     "github": "https://github.com/frm",
     "email": "fernando@mendes.codes"
   },
   "links": {
+    "closer": "https://trycloser.app",
     "subvisual": "https://subvisual.com",
     "rubyconfpt": "https://rubyconf.pt",
     "utrust": "https://utrust.com",
@@ -16,7 +17,8 @@
     "thoughtbot": "https://thoughtbot.com",
     "bragajs": "https://twitter.com/braga__js",
     "coderdojo": "https://github.com/coderdojobraga",
-    "bragabeam": "https://twitter.com/BragaBEAM"
+    "bragabeam": "https://twitter.com/BragaBEAM",
+    "alchemy": "https://alchemyconf.com"
   },
   "talks": [
     {
