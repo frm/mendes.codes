@@ -53,16 +53,8 @@ export default () => {
         <Spacing size="24" />
 
         <p>
-          I'm currently building a new decentralised social hub called{" "}
-          <ExternalLink to={closerUrl}>Closer</ExternalLink>.
-        </p>
-
-        <Spacing size="24" />
-
-        <p>
-          I'm also a software engineer at{" "}
-          <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>, currently
-          living in sunny ol' Portugal.
+          I'm currently building a new DAO communication and collaboration
+          platform called <ExternalLink to={closerUrl}>Closer</ExternalLink>.
         </p>
 
         <Spacing size="24" />
@@ -89,6 +81,7 @@ export default () => {
 
         <p>
           I spent some time at{" "}
+          <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>,{" "}
           <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and at{" "}
           <ExternalLink to={utrustUrl}>Utrust</ExternalLink>. At the latter, I
           helped raise a very successful ICO and build their novel blockchain

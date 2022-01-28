@@ -30,11 +30,12 @@ export default () => {
       <div className="Landing-tagline">
         <p>
           I'm <Highlight type="strong">mendes</Highlight> and I codes. Mostly in
-          the crypto space.
+          web3.
         </p>
 
         <p>
-          I'm currently building a new decentralised social hub called{" "}
+          I'm the CEO and one of the co-founders of a DAO communications and
+          collaboration platform called{" "}
           <ExternalLink to={closerUrl}>Closer</ExternalLink>.
         </p>
       </div>
@@ -44,16 +45,7 @@ export default () => {
           <Spacing size="54" />
 
           <p>
-            When I'm not doing that, I'm a software engineer at{" "}
-            <ExternalLink to={subvisualUrl}>Subvisual</ExternalLink>. Formerly
-            at <ExternalLink to={thoughtbotUrl}>thoughtbot</ExternalLink> and{" "}
-            <ExternalLink to={utrustUrl}>Utrust</ExternalLink>.
-          </p>
-
-          <Spacing size="54" />
-
-          <p>
-            I do a bunch public speaking, blogging, volunteering, teaching and
+            I do a lot of public speaking, blogging, volunteering, teaching and
             open sourcing.
           </p>
 
@@ -78,8 +70,10 @@ export default () => {
           <Spacing size="54" />
 
           <p>
-            Looking for a speaker for your event?{" "}
-            <ExternalLink to={`mailto:${email}`}>Let's talk</ExternalLink>
+            Looking for a speaker for your event? Or just fancy a chat about
+            anything?{" "}
+            <ExternalLink to={`mailto:${email}`}>Let's talk.</ExternalLink> I
+            love meeting new people.
           </p>
         </TextBox>
 
